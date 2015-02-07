@@ -1,0 +1,125 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancelChanges = id; saveChanges = id; selectInvoiceImage = id; }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                dateFormat = NSMatrix; 
+                lblInvoiceImg = NSTextField; 
+                lblPrefsAddress = NSTextField; 
+                lblPrefsCity = NSTextField; 
+                lblPrefsContact = NSTextField; 
+                lblPrefsEmail = NSTextField; 
+                lblPrefsName = NSTextField; 
+                lblPrefsPhone = NSTextField; 
+                lblPrefsPostal = NSTextField; 
+                lblPrefsState = NSTextField; 
+                mdySet = NSButtonCell; 
+                mdySet2 = NSButtonCell; 
+                prefsCloseButton = NSButton; 
+                prefsSaveButton = NSButton; 
+                prefsTabView = NSTabView; 
+                txtMyAddress = NSTextField; 
+                txtMyCity = NSTextField; 
+                txtMyContact = NSTextField; 
+                txtMyEmail = NSTextField; 
+                txtMyName = NSTextField; 
+                txtMyPhone = NSTextField; 
+                txtMyState = NSTextField; 
+                txtMyZip = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                addClient = id; 
+                addInvoice = id; 
+                addProject = id; 
+                addSession = id; 
+                appHelpLink = id; 
+                clearSessions = id; 
+                deleteClient = id; 
+                deleteInvoice = id; 
+                deleteProject = id; 
+                deleteSession = id; 
+                deleteStoredSession = id; 
+                endInvoiceWindow = id; 
+                endNotesWindow = id; 
+                endRegistrationWindow = id; 
+                openPrimoSite = id; 
+                openRegistrationSite = id; 
+                print = id; 
+                promptQTchange = id; 
+                quickTimerStart = id; 
+                raiseInvoiceWindow = id; 
+                raiseNotesWindow = id; 
+                serialNumberEntry = id; 
+                showPreferenceController = id; 
+                startClockTimer = id; 
+                unloadApp = id; 
+                viewSessions = id; 
+            }; 
+            CLASS = appController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                allSessionsView = NSTableView; 
+                butQuit = NSButton; 
+                clientsView = NSTableView; 
+                fileMenuSave = NSMenuItem; 
+                invoiceBox = NSBox; 
+                invoiceWindow = NSWindow; 
+                invoicesView = NSTableView; 
+                lblPrefsAddress = NSTextField; 
+                lblPrefsCity = NSTextField; 
+                lblPrefsContact = NSTextField; 
+                lblPrefsEmail = NSTextField; 
+                lblPrefsName = NSTextField; 
+                lblPrefsPhone = NSTextField; 
+                lblPrefsPostal = NSTextField; 
+                lblPrefsState = NSTextField; 
+                mainTabView = NSTabView; 
+                notesWindow = NSWindow; 
+                prefsCloseButton = NSButton; 
+                prefsSaveButton = NSButton; 
+                regCustomSheet = NSWindow; 
+                regLater = NSButton; 
+                regNumberField = NSTextField; 
+                remainingEvaluationTime = NSTextField; 
+                sessionsView = NSTableView; 
+                tableView = NSTableView; 
+                txtApprovedBy = NSTextField; 
+                txtCheckNumber = NSTextField; 
+                txtClientAddress = NSTextField; 
+                txtClientCity = NSTextField; 
+                txtClientName = NSTextField; 
+                txtClientState = NSTextField; 
+                txtClientZip = NSTextField; 
+                txtDeposit = NSTextField; 
+                txtEndDate = NSTextField; 
+                txtHours = NSTextField; 
+                txtInvoiceDate = NSTextField; 
+                txtInvoiceNumber = NSTextField; 
+                txtMaterials = NSTextView; 
+                txtMaterialsTotal = NSTextField; 
+                txtMyAddress = NSTextField; 
+                txtMyCity = NSTextField; 
+                txtMyName = NSTextField; 
+                txtMyPhone = NSTextField; 
+                txtMyState = NSTextField; 
+                txtMyZip = NSTextField; 
+                txtNotesEntry = NSTextView; 
+                txtProjectName = NSTextField; 
+                txtRate = NSTextField; 
+                txtServices = NSTextView; 
+                txtStartDate = NSTextField; 
+                txtSubTotal = NSTextField; 
+                txtTerms = NSTextField; 
+                txtTotalDue = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

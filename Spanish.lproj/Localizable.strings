@@ -1,0 +1,60 @@
+// Set format to UTF-8 for foreign languages (due to the accents etc) Format->FileEncodings->UTF-8
+// General
+"sOK" = "Autorización";
+"Delete" = "Quite";
+"Cancel" = "Cancelación";
+"sYes" = "Sí";
+"sNo" = "No";
+"notesButtonLabel" = "Agregue";
+
+//main tab functions
+"ConfirmDelete" = "Están sus seguros usted gusto suprimirían?";
+"selProject" = "Seleccione el proyecto";
+"selProjInvoice" = "Seleccione por favor un proyecto para su nueva factura.";
+"selProjSession" = "Seleccione por favor un proyecto para su nueva sesión.";
+"delInvoice" = "Factura De la Cancelación";
+"delInvoiceConfirm" = "¿Realmente factura de la cancelación?";
+
+"profCheck" = "Compruebe el perfil";
+"profCheckMsg" = "Los datos del perfil no existen, satisfacer el cheque sus ajustes del perfil bajo menú de las preferencias.";
+"profNameCheckMsg" = "El nombre del perfil no existe, satisfacer el cheque su perfil bajo menú de las preferencias.";
+
+"saveSess" = "Excepto La Sesión";
+"saveSessMsg" = "Seleccione por favor a un proyecto y a cliente para cada sesión, y excepto la sesión.";
+
+"selClient" = "Seleccione a cliente";
+"selClientMsg" = "Seleccione por favor a cliente para su nuevo proyecto.";
+"delClient" = "Cliente De la Cancelación";
+"delClientConfirm" = "¿Realmente cliente de la cancelación?";
+
+"delSess" = "Sesión de la cancelación";
+"delSessConfirm" = "¿Realmente sesión de la cancelación?";
+
+"delProj" = "Proyecto De la Cancelación";
+"delProjConfirm" = "¿Realmente proyecto de la cancelación?";
+
+//preferences panel
+"PrefsName" = "Nombre/Compañía:";
+"PrefsAddress"= "Dirección:";
+"PrefsCity"= "Ciudad:";
+"PrefsState"= "Estado:";
+"PrefsPostal"= "Código Posta:";
+"PrefsPhone"= "Teléfono:";
+"PrefsEmail"= "Email:";
+"PrefsContact"= "Contacto:";
+"prefsSaveButton"= "Excepto";
+"prefsCloseButton"= "Cierre";
+"prefsTab1" = "Perfil";
+"prefsTab2" = "Ajustes";
+
+"selSettings"="Las Preferencias Ahorraron.";
+"selSetSave"= "Recomience por favor la pista y la cuenta para activar cambios.";
+
+//Registration
+"regCompleted" = "¡El registro terminó!";
+"regThanks" = "¡Gracias por colocar la pista y la cuenta del BTS!";
+"regError" = "Error de entrada del registro.";
+"regErrorMessage" = "El número de registro que usted ha incorporado es inválido.";
+"evalThanks" = "¡Gracias por evaluar la pista y la cuenta del BTS!";
+"evalRegNow" = "¡Por favor registro hoy!";
+

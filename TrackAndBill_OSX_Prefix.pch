@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TrackAndBill_OSX' target in the 'TrackAndBill_OSX' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,118 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {getDateFormat = id; }; 
+            CLASS = NSDateFormatter; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSFormatter; 
+        }, 
+        {CLASS = NSLevelIndicator; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {showReports = id; }; 
+            CLASS = NSMenu; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {changeTable = id; }; 
+            CLASS = NSTabViewItem; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addClient = id; 
+                addInvoice = id; 
+                addProject = id; 
+                addSession = id; 
+                appHelpLink = id; 
+                clearSessions = id; 
+                deleteClient = id; 
+                deleteInvoice = id; 
+                deleteProject = id; 
+                deleteSession = id; 
+                deleteStoredSession = id; 
+                endInvoiceWindow = id; 
+                endNotesWindow = id; 
+                endRegistrationWindow = id; 
+                exportProjectSessions = id; 
+                exportSelectedSessions = id; 
+                openPrimoSite = id; 
+                openRegistrationSite = id; 
+                print = id; 
+                promptQTchange = id; 
+                quickTimerStart = id; 
+                raiseInvoiceWindow = id; 
+                raiseNotesWindow = id; 
+                serialNumberEntry = id; 
+                showPreferenceController = id; 
+                startClockTimer = id; 
+                unloadApp = id; 
+                viewSessions = id; 
+            }; 
+            CLASS = appController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                allSessionsView = NSTableView; 
+                butQuit = NSButton; 
+                clientsView = NSTableView; 
+                fileMenuSave = NSMenuItem; 
+                invoiceBox = NSBox; 
+                invoiceImageDisplay = NSImageView; 
+                invoiceWindow = NSWindow; 
+                invoicesView = NSTableView; 
+                lblPrefsAddress = NSTextField; 
+                lblPrefsCity = NSTextField; 
+                lblPrefsContact = NSTextField; 
+                lblPrefsEmail = NSTextField; 
+                lblPrefsName = NSTextField; 
+                lblPrefsPhone = NSTextField; 
+                lblPrefsPostal = NSTextField; 
+                lblPrefsState = NSTextField; 
+                mainTabView = NSTabView; 
+                notesWindow = NSWindow; 
+                prefsCloseButton = NSButton; 
+                prefsSaveButton = NSButton; 
+                regCustomSheet = NSWindow; 
+                regLater = NSButton; 
+                regNumberField = NSTextField; 
+                remainingEvaluationTime = NSTextField; 
+                sessionsView = NSTableView; 
+                tableView = NSTableView; 
+                txtApprovedBy = NSTextField; 
+                txtCheckNumber = NSTextField; 
+                txtClientAddress = NSTextField; 
+                txtClientCity = NSTextField; 
+                txtClientName = NSTextField; 
+                txtClientState = NSTextField; 
+                txtClientZip = NSTextField; 
+                txtDeposit = NSTextField; 
+                txtEndDate = NSTextField; 
+                txtHours = NSTextField; 
+                txtInvoiceDate = NSTextField; 
+                txtInvoiceNumber = NSTextField; 
+                txtMaterials = NSTextView; 
+                txtMaterialsTotal = NSTextField; 
+                txtMyAddress = NSTextField; 
+                txtMyCity = NSTextField; 
+                txtMyName = NSTextField; 
+                txtMyPhone = NSTextField; 
+                txtMyState = NSTextField; 
+                txtMyZip = NSTextField; 
+                txtNotesEntry = NSTextView; 
+                txtProjectName = NSTextField; 
+                txtRate = NSTextField; 
+                txtServices = NSTextView; 
+                txtStartDate = NSTextField; 
+                txtSubTotal = NSTextField; 
+                txtTerms = NSTextField; 
+                txtTotalDue = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = sessionsView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

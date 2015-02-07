@@ -1,0 +1,26 @@
+
+
+- Localize for French, German
+	- An update to include Russion, and others.
+	
+- Add "Flat Rate" function
+
+- Add checks 
+	- Check that profile is completed
+	- Validate "Delete" actions
+	
+- listview not showing scroll bars(bug in IDE)
+
+- combine projects onto one invoice.
+
+- Add Audio notes functions(use sample project "soundCapture_Test" as guide)
+
+
+//// Feedback and suggestions
+Hello, in Track and Bill BTS, the dates are all shown in M/D/Y 
+format.  I\'m in Australia, so need to use D/M/Y format.  How 
+do I do this? Thanks
+
+"I am a photographer and do 4-5 shoots a day at a flat rate, and I bill twice a month on these jobs. It would be useful to me (very) if the option to bill by job rather than hours was available. (with an adjustable rates field) If you were to make some of the headers changeable that would make it more versatile. I could really use something like this if the above changes were made. For what you are offering I give you 4 Stars! Jim"
+
+

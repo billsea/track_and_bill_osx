@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A905B05A09258730004C08DC /* OutlineView code in Resources */ = {isa = PBXBuildFile; fileRef = A905B05909258730004C08DC /* OutlineView code */; };
+		A910EDE40947C98D000C2B1F /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A910EDE30947C98D000C2B1F /* PreferenceController.m */; };
+		A910EE490947D0F4000C2B1F /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = A910EE470947D0F4000C2B1F /* Preferences.nib */; };
+		A9151F450953A0B800F19A97 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9151F440953A0B800F19A97 /* AppIcon.icns */; };
+		A9151F470953A0E900F19A97 /* icon_62E128E2.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9151F460953A0E900F19A97 /* icon_62E128E2.icns */; };
+		A9151F9B0953AD4800F19A97 /* calendar.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9151F9A0953AD4700F19A97 /* calendar.icns */; };
+		A91EE151092E90E40057186A /* Invoice.m in Sources */ = {isa = PBXBuildFile; fileRef = A91EE150092E90E40057186A /* Invoice.m */; };
+		A92705680919D58B005BD23C /* appController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92705660919D58B005BD23C /* appController.m */; };
+		A92848B4094FBDD600A98E67 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = A92848B3094FBDD600A98E67 /* Profile.m */; };
+		A94A44E80B701FA2003873B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94A44E60B701FA2003873B2 /* Localizable.strings */; };
+		A97610E10BC451AF0096AFBB /* tbSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97610E00BC451AF0096AFBB /* tbSettings.plist */; };
+		A999F72B0B7D24BF0078E276 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A999F72A0B7D24BF0078E276 /* ToDo */; };
+		A9E5460F092310D7004B4B1E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5460E092310D7004B4B1E /* Session.m */; };
+		A9E5D0EE09528CCC00A87E16 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A9E5D0ED09528CCC00A87E16 /* ToDo */; };
+		A9F5844A091BE2AA0039F7DF /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F58449091BE2AA0039F7DF /* Project.m */; };
+		A9F58698091C26B40039F7DF /* FileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F58697091C26B40039F7DF /* FileSystemItem.m */; };
+		A9F6A4660B71712C00D5A020 /* rgLicTBBTS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F6A4650B71712C00D5A020 /* rgLicTBBTS.plist */; };
+		A9F74AC1092171D9003AD557 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F74AC0092171D9003AD557 /* Client.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9D688D50B706B6500AA2B9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* TrackAndBill_OSX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackAndBill_OSX_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TrackAndBill_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackAndBill_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A905B05909258730004C08DC /* OutlineView code */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OutlineView code"; sourceTree = "<group>"; };
+		A910EDE20947C98D000C2B1F /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		A910EDE30947C98D000C2B1F /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		A910EE480947D0F4000C2B1F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		A9151F440953A0B800F19A97 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		A9151F460953A0E900F19A97 /* icon_62E128E2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon_62E128E2.icns; sourceTree = "<group>"; };
+		A9151F9A0953AD4700F19A97 /* calendar.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = calendar.icns; sourceTree = "<group>"; };
+		A91EE14F092E90E40057186A /* Invoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Invoice.h; sourceTree = "<group>"; };
+		A91EE150092E90E40057186A /* Invoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Invoice.m; sourceTree = "<group>"; };
+		A92705660919D58B005BD23C /* appController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = appController.m; sourceTree = "<group>"; };
+		A92705670919D58B005BD23C /* appController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = appController.h; sourceTree = "<group>"; };
+		A92848B2094FBDD600A98E67 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		A92848B3094FBDD600A98E67 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		A9480D970B702AA500CFF091 /* Spanish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A94A44E70B701FA2003873B2 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A97610E00BC451AF0096AFBB /* tbSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = tbSettings.plist; sourceTree = "<group>"; };
+		A999F72A0B7D24BF0078E276 /* ToDo */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
+		A9AA58B60B7029C9005DE293 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		A9E5460D092310D7004B4B1E /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		A9E5460E092310D7004B4B1E /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		A9E5D0ED09528CCC00A87E16 /* ToDo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
+		A9F58448091BE2AA0039F7DF /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		A9F58449091BE2AA0039F7DF /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		A9F58696091C26B40039F7DF /* FileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FileSystemItem.h; sourceTree = "<group>"; };
+		A9F58697091C26B40039F7DF /* FileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FileSystemItem.m; sourceTree = "<group>"; };
+		A9F6A4650B71712C00D5A020 /* rgLicTBBTS.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = rgLicTBBTS.plist; sourceTree = "<group>"; };
+		A9F74ABF092171D9003AD557 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		A9F74AC0092171D9003AD557 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9F58696091C26B40039F7DF /* FileSystemItem.h */,
+				A9F58697091C26B40039F7DF /* FileSystemItem.m */,
+				A9F58448091BE2AA0039F7DF /* Project.h */,
+				A9F58449091BE2AA0039F7DF /* Project.m */,
+				A9F74ABF092171D9003AD557 /* Client.h */,
+				A9F74AC0092171D9003AD557 /* Client.m */,
+				A9E5460D092310D7004B4B1E /* Session.h */,
+				A9E5460E092310D7004B4B1E /* Session.m */,
+				A905B05909258730004C08DC /* OutlineView code */,
+				A91EE14F092E90E40057186A /* Invoice.h */,
+				A91EE150092E90E40057186A /* Invoice.m */,
+				A910EDE20947C98D000C2B1F /* PreferenceController.h */,
+				A910EDE30947C98D000C2B1F /* PreferenceController.m */,
+				A92848B2094FBDD600A98E67 /* Profile.h */,
+				A92848B3094FBDD600A98E67 /* Profile.m */,
+				A9E5D0ED09528CCC00A87E16 /* ToDo */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TrackAndBill_OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TrackAndBill_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				A999F72A0B7D24BF0078E276 /* ToDo */,
+				A9F6A4650B71712C00D5A020 /* rgLicTBBTS.plist */,
+				A97610E00BC451AF0096AFBB /* tbSettings.plist */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TrackAndBill_OSX;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A94A44E60B701FA2003873B2 /* Localizable.strings */,
+				32CA4F630368D1EE00C91783 /* TrackAndBill_OSX_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				A92705660919D58B005BD23C /* appController.m */,
+				A92705670919D58B005BD23C /* appController.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9151F9A0953AD4700F19A97 /* calendar.icns */,
+				A9151F460953A0E900F19A97 /* icon_62E128E2.icns */,
+				A9151F440953A0B800F19A97 /* AppIcon.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				A910EE470947D0F4000C2B1F /* Preferences.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TrackAndBill_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98D84CF0919869200E02551 /* Build configuration list for PBXNativeTarget "TrackAndBill_OSX" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				A9D688D50B706B6500AA2B9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrackAndBill_OSX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TrackAndBill_OSX;
+			productReference = 8D1107320486CEB800E47090 /* TrackAndBill_OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A98D84D30919869200E02551 /* Build configuration list for PBXProject "TrackAndBill_OSX" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Spanish,
+				"Español",
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TrackAndBill_OSX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TrackAndBill_OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				A905B05A09258730004C08DC /* OutlineView code in Resources */,
+				A910EE490947D0F4000C2B1F /* Preferences.nib in Resources */,
+				A9E5D0EE09528CCC00A87E16 /* ToDo in Resources */,
+				A9151F450953A0B800F19A97 /* AppIcon.icns in Resources */,
+				A9151F470953A0E900F19A97 /* icon_62E128E2.icns in Resources */,
+				A9151F9B0953AD4800F19A97 /* calendar.icns in Resources */,
+				A94A44E80B701FA2003873B2 /* Localizable.strings in Resources */,
+				A9F6A4660B71712C00D5A020 /* rgLicTBBTS.plist in Resources */,
+				A999F72B0B7D24BF0078E276 /* ToDo in Resources */,
+				A97610E10BC451AF0096AFBB /* tbSettings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				A92705680919D58B005BD23C /* appController.m in Sources */,
+				A9F5844A091BE2AA0039F7DF /* Project.m in Sources */,
+				A9F58698091C26B40039F7DF /* FileSystemItem.m in Sources */,
+				A9F74AC1092171D9003AD557 /* Client.m in Sources */,
+				A9E5460F092310D7004B4B1E /* Session.m in Sources */,
+				A91EE151092E90E40057186A /* Invoice.m in Sources */,
+				A910EDE40947C98D000C2B1F /* PreferenceController.m in Sources */,
+				A92848B4094FBDD600A98E67 /* Profile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				A9AA58B60B7029C9005DE293 /* Spanish */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		A910EE470947D0F4000C2B1F /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A910EE480947D0F4000C2B1F /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+		A94A44E60B701FA2003873B2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94A44E70B701FA2003873B2 /* English */,
+				A9480D970B702AA500CFF091 /* Spanish */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98D84D00919869200E02551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../CocoaMySQL",
+					"$(SRCROOT)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TrackAndBill_OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = TrackAndBill_OSX;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A98D84D10919869200E02551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../CocoaMySQL",
+					"$(SRCROOT)",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TrackAndBill_OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = TrackAndBill_OSX;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A98D84D20919869200E02551 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../CocoaMySQL",
+					"$(SRCROOT)",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TrackAndBill_OSX_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TrackAndBill_OSX;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		A98D84D40919869200E02551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A98D84D50919869200E02551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		A98D84D60919869200E02551 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98D84CF0919869200E02551 /* Build configuration list for PBXNativeTarget "TrackAndBill_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98D84D00919869200E02551 /* Debug */,
+				A98D84D10919869200E02551 /* Release */,
+				A98D84D20919869200E02551 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		A98D84D30919869200E02551 /* Build configuration list for PBXProject "TrackAndBill_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98D84D40919869200E02551 /* Debug */,
+				A98D84D50919869200E02551 /* Release */,
+				A98D84D60919869200E02551 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

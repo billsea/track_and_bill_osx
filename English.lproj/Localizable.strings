@@ -1,0 +1,58 @@
+// Set format to UTF-8 for foreign languages (due to the accents etc) Format->FileEncodings->UTF-8
+// General
+"sOK" = "OK";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+"sYes" = "Yes";
+"sNo" = "No";
+"notesButtonLabel" = "Add";
+
+//main tab functions
+"ConfirmDelete" = "Are your sure you'd like to delete?";
+"selProject" = "Select project";
+"selProjInvoice" = "Please select a project for your new invoice.";
+"selProjExport" = "Please select a project to export.";
+"selProjSession" = "Please select a project for your new session.";
+"delInvoice" = "Delete Invoice";
+"delInvoiceConfirm" = "Really delete invoice?";
+
+"profCheck" = "Check profile";
+"profCheckMsg" = "Profile data does not exist, please check your profile settings under the Preferences menu.";
+"profNameCheckMsg" = "Profile name does not exist, please check your profile under the Preferences menu.";
+
+"saveSess" = "Save Session";
+"saveSessMsg" = "Please select a project and client for each session, and save session.";
+
+"selClient" = "Select client";
+"selClientMsg" = "Please select a client for your new project.";
+"delClient" = "Delete Client";
+"delClientConfirm" = "Really delete client?";
+
+"delSess" = "Delete session";
+"delSessConfirm" = "Really delete session?";
+
+"delProj" = "Delete Project";
+"delProjConfirm" = "Really delete project?";
+
+//preferences panel
+"PrefsName" = "Name/Company:";
+"PrefsAddress"= "Address:";
+"PrefsCity"= "City:";
+"PrefsState"= "State:";
+"PrefsPostal"= "Postal Code:";
+"PrefsPhone"= "Phone:";
+"PrefsEmail"= "Email:";
+"PrefsContact"= "Contact:";
+"prefsSaveButton"= "Save";
+"prefsCloseButton"= "Close";
+"prefsTab1" = "Profile";
+"prefsTab2" = "Settings";
+"selSettings"="Preferences Saved.";
+"selSetSave"= "Please restart Track and Bill to activate changes.";
+//Registration
+"regCompleted" = "Registration completed!";
+"regThanks" = "Thanks for Registering BTS Track and Bill!";
+"regError" = "Registration entry error";
+"regErrorMessage" = "The registration number you have entered is not valid";
+"evalThanks" = "Thanks for evaluating BTS Track and Bill!";
+"evalRegNow" = "Please register today!";
