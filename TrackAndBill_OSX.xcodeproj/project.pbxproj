@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,7 +22,6 @@
 		A92848B4094FBDD600A98E67 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = A92848B3094FBDD600A98E67 /* Profile.m */; };
 		A94A44E80B701FA2003873B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94A44E60B701FA2003873B2 /* Localizable.strings */; };
 		A97610E10BC451AF0096AFBB /* tbSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97610E00BC451AF0096AFBB /* tbSettings.plist */; };
-		A999F72B0B7D24BF0078E276 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A999F72A0B7D24BF0078E276 /* ToDo */; };
 		A9E5460F092310D7004B4B1E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5460E092310D7004B4B1E /* Session.m */; };
 		A9E5D0EE09528CCC00A87E16 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A9E5D0ED09528CCC00A87E16 /* ToDo */; };
 		A9F5844A091BE2AA0039F7DF /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F58449091BE2AA0039F7DF /* Project.m */; };
@@ -222,8 +221,17 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = ZZGJ2UYWJY;
+					};
+				};
+			};
 			buildConfigurationList = A98D84D30919869200E02551 /* Build configuration list for PBXProject "TrackAndBill_OSX" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -257,7 +265,6 @@
 				A9151F9B0953AD4800F19A97 /* calendar.icns in Resources */,
 				A94A44E80B701FA2003873B2 /* Localizable.strings in Resources */,
 				A9F6A4660B71712C00D5A020 /* rgLicTBBTS.plist in Resources */,
-				A999F72B0B7D24BF0078E276 /* ToDo in Resources */,
 				A97610E10BC451AF0096AFBB /* tbSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +331,7 @@
 		A98D84D00919869200E02551 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../CocoaMySQL",
@@ -339,8 +347,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PREBINDING = NO;
 				PRODUCT_NAME = TrackAndBill_OSX;
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -349,7 +359,7 @@
 		A98D84D10919869200E02551 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = ppc;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../CocoaMySQL",
@@ -363,9 +373,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PREBINDING = NO;
 				PRODUCT_NAME = TrackAndBill_OSX;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -374,6 +385,7 @@
 		A98D84D20919869200E02551 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../CocoaMySQL",
 					"$(SRCROOT)",
@@ -385,7 +397,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = TrackAndBill_OSX;
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Default;
@@ -393,14 +407,14 @@
 		A98D84D40919869200E02551 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		A98D84D50919869200E02551 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = ppc;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
