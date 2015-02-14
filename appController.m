@@ -665,8 +665,6 @@
             int validateAction;
             validateAction = NSRunAlertPanel(NSLocalizedString(@"profCheck", @"profCheck"), NSLocalizedString(@"profCheckMsg", @"profCheckMsg"),NSLocalizedString(@"0K", @"OK"), nil, nil);
             
-    
-            
 		}else{
 			Profile *uProfile;
             [arrProfiles autorelease];
@@ -740,7 +738,7 @@
             @catch(NSException *exception)
             {
                 
-                //[txtInvoiceDate setStringValue:invDate];
+                [txtInvoiceDate setStringValue:invDate];
             }
             
             NSDate *stDate = [uInvoice startDate];
@@ -751,17 +749,18 @@
             }
             @catch(NSException *exception)
             {
-                //[txtStartDate setStringValue:stDate];
+                [txtStartDate setStringValue:stDate];
             }
             
             NSDate *endDate = [uInvoice endDate];
             MDY=[dateFormatter stringFromDate:endDate];
+            
             @try{
             [txtEndDate setStringValue:MDY];
             }
             @catch(NSException *exception)
             {
-                //[txtEndDate setStringValue:endDate];
+                [txtEndDate setStringValue:endDate];
             }
             
             //insert invoice image
@@ -779,8 +778,7 @@
                 modalDelegate:self
                didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:)
                   contextInfo:NULL];
-            
-            [uProfile release];
+           
         }
 	}
 }
@@ -798,6 +796,7 @@
 	
 	//return to normal event handling
 	[NSApp endSheet:invoiceWindow returnCode:1];
+    
 }
 	
 	
@@ -1386,7 +1385,7 @@
 	return 0;
 }
 
-
+#pragma mark table view delegate methods
 //Loads table views
 
 - (id)tableView:(NSTableView *)atableView objectValueForTableColumn:(NSTableColumn *)tableViewColumn row:(int)rowIndex
@@ -1466,6 +1465,7 @@ return nil;
 	}
 
 }
+
 
 
 //////////////////////////////////////////
@@ -1768,8 +1768,10 @@ return nil;
 		}
 		
 	@try{
-		//write to file
-		result = [fileArray writeToFile:[path absoluteString] atomically:0];
+        
+		//write to markup file
+        result = [fileArray writeToURL:path atomically:NO];
+		
 		
 	}@catch (NSException *exception) {
 		//NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
