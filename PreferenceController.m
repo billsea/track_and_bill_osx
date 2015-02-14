@@ -57,8 +57,7 @@
 {
 	
 	[self setDateFormat];
-	
-	int err;
+
 	//save plist setting
 	[self writeSettings:@"invoiceImage" :[lblInvoiceImg stringValue]];
 	
@@ -118,7 +117,8 @@
 	
 	if ([fileManager fileExistsAtPath: folder] == NO)
 	{
-		[fileManager createDirectoryAtPath: folder attributes: nil];
+        [fileManager createDirectoryAtPath:folder withIntermediateDirectories:NO attributes:nil error:nil];
+		//[fileManager createDirectoryAtPath: folder attributes: nil];
 	}
 
 			NSString *fileName = @"profiles.tbd"; //new file name
@@ -136,6 +136,9 @@
 			
 		if ([arrProfiles count] > 0 ){
 
+            Profile * p = [arrProfiles objectAtIndex:0];
+     
+            
 			if ([[arrProfiles objectAtIndex:0] profileName] != nil){
 				[txtMyName setStringValue:[[arrProfiles objectAtIndex:0] profileName]];
 			}
@@ -175,7 +178,7 @@
 	}
 
 	
-	NSLog(@"date format changed: %d.\n", [mdySet state]); 
+	//NSLog(@"date format changed: %ld.\n", (long)[mdySet state]);
 	
 }
 
@@ -184,15 +187,19 @@
 	
 	int result; 
 	NSOpenPanel *oPanel = [NSOpenPanel openPanel]; 
-	NSString *theFileName; 
+	NSURL * theFileName;
 	// All file types NSSound understands 
-	[oPanel setAllowsMultipleSelection:NO]; 
-	result = [oPanel runModalForDirectory:NSHomeDirectory() file:nil 
-									types:nil]; 
+	[oPanel setAllowsMultipleSelection:NO];
+    
+    result = [oPanel runModal];
+	//result = [oPanel runModalForDirectory:NSHomeDirectory() file:nil types:nil];
+    
 	if (result == NSOKButton) { 
 		 
-		theFileName = [oPanel filename]; 
-		[lblInvoiceImg setStringValue:theFileName];
+        theFileName = [oPanel URL];
+        //theFileName = [oPanel filename];
+        
+		[lblInvoiceImg setStringValue:[theFileName path]];
 		
 		NSLog(@"Open Panel Returned: %@.\n", theFileName); 
 	
@@ -201,7 +208,7 @@
 
 }
 
--(void) writeSettings:(NSString*)plistKey:(NSString*)plistValue
+-(void) writeSettings:(NSString*)plistKey : (NSString*)plistValue
 {
 	//store this in settings plist file
 	NSString *settingsPath = [[NSBundle bundleWithIdentifier: @"com.primomedia.TrackAndBill"] pathForResource:@"tbSettings" ofType:@"plist"];

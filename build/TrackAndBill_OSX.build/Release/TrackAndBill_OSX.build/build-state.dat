@@ -1,787 +1,0 @@
-TTrackAndBill_OSX
-v7
-r0
-t309660972.301153
-cCheck dependencies
-cProcessInfoPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Info.plist Info.plist
-cStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib
-cStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib
-cCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cCpResource "build/Release/TrackAndBill_OSX.app/Contents/Resources/OutlineView code" "OutlineView code"
-cStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib
-cCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo ToDo
-cCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo ToDo
-cCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/AppIcon.icns AppIcon.icns
-cCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/icon_62E128E2.icns icon_62E128E2.icns
-cCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/calendar.icns calendar.icns
-cCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Localizable.strings English.lproj/Localizable.strings
-cCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/Localizable.strings Spanish.lproj/Localizable.strings
-cCopyPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/rgLicTBBTS.plist rgLicTBBTS.plist
-cCopyPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/tbSettings.plist tbSettings.plist
-cProcessPCH /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch.gch TrackAndBill_OSX_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/main.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/appController.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Project.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/FileSystemItem.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Client.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Session.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Invoice.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/PreferenceController.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Profile.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m normal ppc objective-c com.apple.compilers.gcc.4_2
-cLd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX normal ppc
-cTouch /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app
-
-N/Developer/SDKs/MacOSX10.5.sdk
-c000000004B69AD8E00000000000000EE
-t1265216910
-s238
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004864A1C900000000000012EE
-t1214554569
-s4846
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/AppIcon.icns
-c000000003F4A95D4000000000000BAC4
-t1061852628
-s47812
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.h
-c0000000043A1C6760000000000000338
-t1134675574
-s824
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m
-c0000000043A1C7DC0000000000000D52
-t1134675932
-s3410
-i"Client.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/InfoPlist.strings
-c0000000043A30FB80000000000000108
-t1134759864
-s264
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Localizable.strings
-c00000000462A93910000000000000827
-t1177195409
-s2087
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib
-c000000004A4C523900000000000000AA
-t1246515769
-s170
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib
-c0000000046199B0B00000000000000AA
-t1176083211
-s170
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.h
-c0000000039403224000000000000017D
-t960508452
-s381
-i<Foundation/Foundation.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m
-c000000004032A90200000000000011EF
-t1077061890
-s4591
-i"FileSystemItem.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h
-c0000000046198DEF000000000000076E
-t1176079855
-s1902
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m
-c0000000046198EB10000000000002AF7
-t1176080049
-s10999
-i"Invoice.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/OutlineView code
-c0000000043754FB60000000000000915
-t1131761590
-s2325
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.h
-c0000000046199AF300000000000005DA
-t1176083187
-s1498
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m
-c000000004A4CE9C90000000000001F00
-t1246554569
-s7936
-i"PreferenceController.h"
-i"Profile.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.h
-c00000000439F89360000000000000301
-t1134528822
-s769
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m
-c0000000043A309340000000000000C34
-t1134758196
-s3124
-i"Profile.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.h
-c000000004CC4CB680000000000000298
-t1287965544
-s664
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m
-c0000000046198B1A00000000000010F7
-t1176079130
-s4343
-i"Project.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.h
-c0000000046198CFF0000000000000333
-t1176079615
-s819
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m
-c0000000046198D1E0000000000000FF5
-t1176079646
-s4085
-i"Session.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/Localizable.strings
-c0000000046199077000000000000093D
-t1176080503
-s2365
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib
-c000000004633E07200000000000000AA
-t1177804914
-s170
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/ToDo
-c00000000464295EA00000000000003C9
-t1178768874
-s969
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/TrackAndBill_OSX_Prefix.pch
-c0000000043694F0800000000000000A3
-t1130974984
-s163
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.h
-c000000004CC4CC010000000000001283
-t1287965697
-s4739
-i<Cocoa/Cocoa.h>
-i<Project.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m
-c000000004CC4D491000000000000C1BD
-t1287967889
-s49597
-i"appController.h"
-i"Project.h"
-i"Client.h"
-i"Session.h"
-i"Invoice.h"
-i"Profile.h"
-i"PreferenceController.h"
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app
-t1287968172
-s102
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Info.plist
-t1287968161
-s1551
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX
-t1287968172
-s82056
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/PkgInfo
-t1287968161
-s8
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/AppIcon.icns
-t1287968163
-s47812
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1287968163
-s264
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Localizable.strings
-t1287968163
-s4176
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/MainMenu.nib
-t1287968162
-s76693
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Preferences.nib
-t1287968163
-s14362
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/OutlineView code
-t1287968163
-s2325
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/Localizable.strings
-t1287968163
-s4658
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/MainMenu.nib
-t1287968162
-s68312
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo
-t1287968163
-s969
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/calendar.icns
-t1287968163
-s45042
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/icon_62E128E2.icns
-t1287968163
-s4447
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/rgLicTBBTS.plist
-t1287968163
-s276
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/tbSettings.plist
-t1287968163
-s279
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Client.o
-t1287968170
-s10052
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/FileSystemItem.o
-t1287968170
-s5952
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Invoice.o
-t1287968171
-s24956
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/PreferenceController.o
-t1287968171
-s17652
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Profile.o
-t1287968171
-s8404
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Project.o
-t1287968169
-s12376
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Session.o
-t1287968170
-s11992
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/TrackAndBill_OSX.LinkFileList
-c000000004CC4D5A10000000000000553
-t1287968161
-s1363
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/appController.o
-t1287968171
-s76272
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/main.o
-t1287968169
-s1892
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/calendar.icns
-c00000000417C3F01000000000000AFF2
-t1098661633
-s45042
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/icon_62E128E2.icns
-c0000000042112094000000000000115F
-t1108418708
-s4447
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m
-c0000000043694F0800000000000000FE
-t1130974984
-s254
-i<Cocoa/Cocoa.h>
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/rgLicTBBTS.plist
-c0000000045AADD200000000000000114
-t1168825632
-s276
-
-N/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/tbSettings.plist
-c0000000046141A810000000000000117
-t1175722625
-s279
-
-N/var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch.gch
-t1287968169
-s36208848
-
-NInfo.plist
-c0000000043A3B7620000000000000618
-t1134802786
-s1560
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies309660961#309660961#0(174"[WARN]Warning: Multiple build commands for output file /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo1(22@167"Warning: Multiple build commands for output file /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo309660961#18446744073709551615#0#0(1@0"0(0#1#0"4300885448#0"0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Client.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660970.152113
-e309660970.443579
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Client.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m309660970#309660970#0(0"0(0#0#68"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m4300885448#1495"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Client.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Client.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/FileSystemItem.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660969.919256
-e309660970.151978
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/FileSystemItem.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m309660969#309660970#0(0"0(0#0#76"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m4300885448#1511"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/FileSystemItem.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/FileSystemItem.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Invoice.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660970.785525
-e309660971.522048
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Invoice.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: In function '-[Invoice setMaterialsTotal:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:340: warning: conflicting types for '-(void)setMaterialsTotal:(float)mTotal'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h:62: warning: previous declaration of '-(void)setMaterialsTotal:(double)mTotal'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: In function '-[Invoice setInvoiceDeposit:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:352: warning: conflicting types for '-(void)setInvoiceDeposit:(float)iDeposit'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h:65: warning: previous declaration of '-(void)setInvoiceDeposit:(double)iDeposit'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: At top level:
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:459: warning: incomplete implementation of class 'Invoice'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:459: warning: method definition for '-setInvoiceScale:' not found
-lSLF07#2@77"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m309660970#309660971#0(1178"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: In function '-[Invoice setMaterialsTotal:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:340: warning: conflicting types for '-(void)setMaterialsTotal:(float)mTotal'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h:62: warning: previous declaration of '-(void)setMaterialsTotal:(double)mTotal'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: In function '-[Invoice setInvoiceDeposit:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:352: warning: conflicting types for '-(void)setInvoiceDeposit:(float)iDeposit'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h:65: warning: previous declaration of '-(void)setInvoiceDeposit:(double)iDeposit'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m: At top level:/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:459: warning: incomplete implementation of class 'Invoice'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m:459: warning: method definition for '-setInvoiceScale:' not found7(22@62"Conflicting types for '-(void)setMaterialsTotal:(float)mTotal'309660970#116#147#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m197772849#340#0#340#0#25"conflicting types for '*'0(22@65"Previous declaration of '-(void)setMaterialsTotal:(double)mTotal'309660970#263#149#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h197772655#62#0#62#0#0"0(22@64"Conflicting types for '-(void)setInvoiceDeposit:(float)iDeposit'309660970#528#149#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m197772849#352#0#352#0#25"conflicting types for '*'0(22@67"Previous declaration of '-(void)setInvoiceDeposit:(double)iDeposit'309660970#677#151#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.h197772655#65#0#65#0#0"0(23@13"At top level:309660970#828#85#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m197772849#0#0#0#0#0"0(22@44"Incomplete implementation of class 'Invoice'309660970#913#129#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m197772849#459#0#459#0#38"incomplete implementation of class '*'0(22@51"Method definition for '-setInvoiceScale:' not found309660970#1042#136#0(6@69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m197772849#459#0#459#0#35"method definition for '*' not found0(0#0#69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m4300885448#1497"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Invoice.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Invoice.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/PreferenceController.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660971.234827
-e309660971.714491
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/PreferenceController.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController saveChanges:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:61: warning: unused variable 'err'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController setProfiles:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: no '-profileName' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: (Messages without a matching method signature
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: will be assumed to return 'id' and accept
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: '...' as arguments.)
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:140: warning: no '-profileName' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:142: warning: no '-profileAddress' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:143: warning: no '-profileAddress' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:145: warning: no '-profileCity' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:146: warning: no '-profileCity' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:148: warning: no '-profileState' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:149: warning: no '-profileState' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:151: warning: no '-profileZip' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:152: warning: no '-profileZip' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:154: warning: no '-profilePhone' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:155: warning: no '-profilePhone' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:157: warning: no '-profileEmail' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:158: warning: no '-profileEmail' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:160: warning: no '-profileContact' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:161: warning: no '-profileContact' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController writeSettings::]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:212: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast
-lSLF07#2@90"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m309660971#309660971#0(3180"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController saveChanges:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:61: warning: unused variable 'err'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController setProfiles:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: no '-profileName' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: (Messages without a matching method signature/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: will be assumed to return 'id' and accept/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:139: warning: '...' as arguments.)/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:140: warning: no '-profileName' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:142: warning: no '-profileAddress' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:143: warning: no '-profileAddress' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:145: warning: no '-profileCity' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:146: warning: no '-profileCity' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:148: warning: no '-profileState' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:149: warning: no '-profileState' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:151: warning: no '-profileZip' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:152: warning: no '-profileZip' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:154: warning: no '-profilePhone' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:155: warning: no '-profilePhone' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:157: warning: no '-profileEmail' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:158: warning: no '-profileEmail' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:160: warning: no '-profileContact' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:161: warning: no '-profileContact' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m: In function '-[PreferenceController writeSettings::]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m:212: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast19(22@21"Unused variable 'err'309660971#136#118#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#61#0#61#0#19"unused variable '*'0(22@30"No '-profileName' method found309660971#390#128#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#139#0#139#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)309660971#518#143#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#139#0#139#0#0"0(22@30"No '-profileName' method found309660971#918#128#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#140#0#140#0#19"no '*' method found0(22@33"No '-profileAddress' method found309660971#1046#131#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#142#0#142#0#19"no '*' method found0(22@33"No '-profileAddress' method found309660971#1177#131#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#143#0#143#0#19"no '*' method found0(22@30"No '-profileCity' method found309660971#1308#128#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#145#0#145#0#19"no '*' method found0(22@30"No '-profileCity' method found309660971#1436#128#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#146#0#146#0#19"no '*' method found0(22@31"No '-profileState' method found309660971#1564#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#148#0#148#0#19"no '*' method found0(22@31"No '-profileState' method found309660971#1693#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#149#0#149#0#19"no '*' method found0(22@29"No '-profileZip' method found309660971#1822#127#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#151#0#151#0#19"no '*' method found0(22@29"No '-profileZip' method found309660971#1949#127#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#152#0#152#0#19"no '*' method found0(22@31"No '-profilePhone' method found309660971#2076#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#154#0#154#0#19"no '*' method found0(22@31"No '-profilePhone' method found309660971#2205#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#155#0#155#0#19"no '*' method found0(22@31"No '-profileEmail' method found309660971#2334#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#157#0#157#0#19"no '*' method found0(22@31"No '-profileEmail' method found309660971#2463#129#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#158#0#158#0#19"no '*' method found0(22@33"No '-profileContact' method found309660971#2592#131#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#160#0#160#0#19"no '*' method found0(22@33"No '-profileContact' method found309660971#2723#131#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#161#0#161#0#19"no '*' method found0(22@89"Passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast309660971#2993#187#0(6@82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m268247369#212#0#212#0#67"passing argument * of '*' makes integer from pointer without a cast0(0#0#82"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m4300885448#1523"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/PreferenceController.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/PreferenceController.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Profile.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660971.522190
-e309660971.792523
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Profile.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m309660971#309660971#0(0"0(0#0#69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m4300885448#1497"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Profile.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Profile.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Project.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660969.582666
-e309660969.919118
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Project.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m309660969#309660969#0(0"0(0#0#69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m4300885448#1497"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Project.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Project.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Session.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660970.443717
-e309660970.785295
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Session.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m309660970#309660970#0(0"0(0#0#69"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m4300885448#1497"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Session.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/Session.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/appController.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660969.265834
-e309660971.234616
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/appController.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController awakeFromNib]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: 'appController' may not respond to '-evaluationCheck'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: (Messages without a matching method signature
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: will be assumed to return 'id' and accept
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: '...' as arguments.)
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController evaluationCheck]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:124: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:128: warning: incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:138: warning: incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController serialNumberEntry:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:206: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:208: warning: unused variable 'serNum'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:215: warning: unused variable 'serNum'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController unloadApp:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:232: warning: unused variable 'serNum'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addInvoice:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:265: warning: 'Project' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:266: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:267: warning: 'Project' may not respond to '-clientID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:268: warning: 'Project' may not respond to '-startDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:269: warning: 'Project' may not respond to '-endDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:270: warning: 'Project' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:271: warning: 'Project' may not respond to '-totalTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:284: warning: 'Invoice' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:288: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:295: warning: 'Session' may not respond to '-sessionDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:298: warning: 'Session' may not respond to '-txtNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:302: warning: 'Session' may not respond to '-sessionDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:304: warning: 'Session' may not respond to '-txtNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController createInvoiceNumber]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:348: warning: 'Invoice' may not respond to '-invoiceNumber'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController viewSelectedSessions]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:409: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:415: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:402: warning: unused variable 'err'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController createProjectID]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:470: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController computeTotalTime]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:518: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:524: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:527: warning: 'Session' may not respond to '-endTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:527: warning: 'Session' may not respond to '-startTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController startClockTimer:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:563: warning: 'Session' may not respond to '-startTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController raiseNotesWindow:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:597: warning: 'Session' may not respond to '-txtNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:607: warning: 'Session' may not respond to '-txtNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController raiseInvoiceWindow:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:674: warning: 'Profile' may not respond to '-profileName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:678: warning: 'Profile' may not respond to '-profileName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:679: warning: 'Profile' may not respond to '-profileAddress'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:680: warning: 'Profile' may not respond to '-profileCity'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:681: warning: 'Profile' may not respond to '-profileState'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:682: warning: 'Profile' may not respond to '-profileZip'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:683: warning: 'Profile' may not respond to '-profilePhone'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:688: warning: 'Invoice' may not respond to '-invoiceNumber'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:689: warning: 'Invoice' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:692: warning: 'Invoice' may not respond to '-clientID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:695: warning: no '-clientID' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:697: warning: no '-streetAddress' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:698: warning: no '-city' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:699: warning: passing argument 1 of 'setStringValue:' makes pointer from integer without a cast
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:700: warning: no '-postalCode' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:704: warning: 'Invoice' may not respond to '-approvalName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:705: warning: 'Invoice' may not respond to '-invoiceTerms'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:706: warning: 'Invoice' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:708: warning: 'Invoice' may not respond to '-invoiceNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:710: warning: 'Invoice' may not respond to '-invoiceMaterials'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:711: warning: 'Invoice' may not respond to '-totalTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:713: warning: 'Invoice' may not respond to '-SinvoiceRate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:714: warning: 'Invoice' may not respond to '-StotalDue'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:715: warning: 'Invoice' may not respond to '-SmaterialsTotal'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:716: warning: 'Invoice' may not respond to '-SinvoiceDeposit'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:717: warning: 'Invoice' may not respond to '-SgrandTotal'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:718: warning: 'Invoice' may not respond to '-checkNumber'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:730: warning: 'Invoice' may not respond to '-invoiceDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:738: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:741: warning: 'Invoice' may not respond to '-startDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:749: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:752: warning: 'Invoice' may not respond to '-endDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:759: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController promptQTchange:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:891: warning: 'Session' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:891: warning: 'Session' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:893: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:900: warning: 'Session' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:901: warning: 'Session' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:906: warning: 'Project' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:906: warning: 'Project' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:907: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:908: warning: 'Project' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:909: warning: 'Project' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:914: warning: 'Session' may not respond to '-sessionID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:914: warning: 'Session' may not respond to '-sessionID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:915: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:921: warning: 'Session' may not respond to '-endTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addSession:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:984: warning: 'Project' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:985: warning: 'Project' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:989: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addProject:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1032: warning: 'Client' may not respond to '-company'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1036: warning: 'Client' may not respond to '-clientID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController deleteSession:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1138: warning: no '-sessionID' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1143: warning: no '-sessionID' method found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1133: warning: unused variable 'rowObj'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController loadDataFromDisk:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1573: warning: 'appController' may not respond to '-setClients:'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1587: warning: 'appController' may not respond to '-setStoredSessions:'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController exportProjectSessions:]':
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1744: warning: 'Project' may not respond to '-projectID'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1748: warning: 'Session' may not respond to '-projectIDref'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1755: warning: 'Session' may not respond to '-clientName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1755: warning: 'Session' may not respond to '-projectName'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1756: warning: 'Session' may not respond to '-sessionDate'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1756: warning: 'Session' may not respond to '-startTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1757: warning: 'Session' may not respond to '-endTime'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1757: warning: 'Session' may not respond to '-txtNotes'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1726: warning: unused variable 'dateFormat'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1717: warning: unused variable 'csvString'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: At top level:
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: incomplete implementation of class 'appController'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '+dateWithYear:month:day:hour:minute:second:timeZone:' not found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: incomplete implementation of class 'appController'
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '-addStoredSessions' not found
-o/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '-sheetDidEnd:returnCode:contectInfo:' not found
-lSLF07#2@83"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660969#309660971#0(17244"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController awakeFromNib]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: 'appController' may not respond to '-evaluationCheck'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: (Messages without a matching method signature/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: will be assumed to return 'id' and accept/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:65: warning: '...' as arguments.)/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController evaluationCheck]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:124: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:128: warning: incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:138: warning: incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController serialNumberEntry:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:206: warning: passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:208: warning: unused variable 'serNum'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:215: warning: unused variable 'serNum'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController unloadApp:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:232: warning: unused variable 'serNum'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addInvoice:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:265: warning: 'Project' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:266: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:267: warning: 'Project' may not respond to '-clientID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:268: warning: 'Project' may not respond to '-startDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:269: warning: 'Project' may not respond to '-endDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:270: warning: 'Project' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:271: warning: 'Project' may not respond to '-totalTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:284: warning: 'Invoice' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:288: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:295: warning: 'Session' may not respond to '-sessionDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:298: warning: 'Session' may not respond to '-txtNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:302: warning: 'Session' may not respond to '-sessionDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:304: warning: 'Session' may not respond to '-txtNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController createInvoiceNumber]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:348: warning: 'Invoice' may not respond to '-invoiceNumber'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController viewSelectedSessions]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:409: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:415: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:402: warning: unused variable 'err'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController createProjectID]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:470: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController computeTotalTime]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:518: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:524: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:527: warning: 'Session' may not respond to '-endTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:527: warning: 'Session' may not respond to '-startTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController startClockTimer:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:563: warning: 'Session' may not respond to '-startTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController raiseNotesWindow:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:597: warning: 'Session' may not respond to '-txtNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:607: warning: 'Session' may not respond to '-txtNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController raiseInvoiceWindow:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:674: warning: 'Profile' may not respond to '-profileName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:678: warning: 'Profile' may not respond to '-profileName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:679: warning: 'Profile' may not respond to '-profileAddress'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:680: warning: 'Profile' may not respond to '-profileCity'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:681: warning: 'Profile' may not respond to '-profileState'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:682: warning: 'Profile' may not respond to '-profileZip'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:683: warning: 'Profile' may not respond to '-profilePhone'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:688: warning: 'Invoice' may not respond to '-invoiceNumber'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:689: warning: 'Invoice' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:692: warning: 'Invoice' may not respond to '-clientID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:695: warning: no '-clientID' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:697: warning: no '-streetAddress' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:698: warning: no '-city' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:699: warning: passing argument 1 of 'setStringValue:' makes pointer from integer without a cast/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:700: warning: no '-postalCode' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:704: warning: 'Invoice' may not respond to '-approvalName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:705: warning: 'Invoice' may not respond to '-invoiceTerms'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:706: warning: 'Invoice' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:708: warning: 'Invoice' may not respond to '-invoiceNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:710: warning: 'Invoice' may not respond to '-invoiceMaterials'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:711: warning: 'Invoice' may not respond to '-totalTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:713: warning: 'Invoice' may not respond to '-SinvoiceRate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:714: warning: 'Invoice' may not respond to '-StotalDue'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:715: warning: 'Invoice' may not respond to '-SmaterialsTotal'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:716: warning: 'Invoice' may not respond to '-SinvoiceDeposit'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:717: warning: 'Invoice' may not respond to '-SgrandTotal'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:718: warning: 'Invoice' may not respond to '-checkNumber'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:730: warning: 'Invoice' may not respond to '-invoiceDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:738: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:741: warning: 'Invoice' may not respond to '-startDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:749: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:752: warning: 'Invoice' may not respond to '-endDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:759: warning: incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController promptQTchange:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:891: warning: 'Session' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:891: warning: 'Session' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:893: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:900: warning: 'Session' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:901: warning: 'Session' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:906: warning: 'Project' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:906: warning: 'Project' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:907: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:908: warning: 'Project' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:909: warning: 'Project' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:914: warning: 'Session' may not respond to '-sessionID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:914: warning: 'Session' may not respond to '-sessionID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:915: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:921: warning: 'Session' may not respond to '-endTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addSession:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:984: warning: 'Project' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:985: warning: 'Project' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:989: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController addProject:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1032: warning: 'Client' may not respond to '-company'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1036: warning: 'Client' may not respond to '-clientID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController deleteSession:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1138: warning: no '-sessionID' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1143: warning: no '-sessionID' method found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1133: warning: unused variable 'rowObj'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController loadDataFromDisk:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1573: warning: 'appController' may not respond to '-setClients:'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1587: warning: 'appController' may not respond to '-setStoredSessions:'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: In function '-[appController exportProjectSessions:]':/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1744: warning: 'Project' may not respond to '-projectID'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1748: warning: 'Session' may not respond to '-projectIDref'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1755: warning: 'Session' may not respond to '-clientName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1755: warning: 'Session' may not respond to '-projectName'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1756: warning: 'Session' may not respond to '-sessionDate'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1756: warning: 'Session' may not respond to '-startTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1757: warning: 'Session' may not respond to '-endTime'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1757: warning: 'Session' may not respond to '-txtNotes'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1726: warning: unused variable 'dateFormat'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1717: warning: unused variable 'csvString'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m: At top level:/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: incomplete implementation of class 'appController'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '+dateWithYear:month:day:hour:minute:second:timeZone:' not found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: incomplete implementation of class 'appController'/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '-addStoredSessions' not found/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m:1809: warning: method definition for '-sheetDidEnd:returnCode:contectInfo:' not found107(22@53"'appController' may not respond to '-evaluationCheck'309660969#122#143#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#65#0#65#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)309660969#265#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#65#0#65#0#0"0(22@89"Passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast309660969#766#180#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#124#0#124#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@91"Incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'309660969#946#182#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#128#0#128#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@91"Incompatible Objective-C types initializing 'struct NSString *', expected 'struct NSDate *'309660969#1128#182#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#138#0#138#0#61"incompatible Objective-C types initializing '*', expected '*'0(22@89"Passing argument 2 of 'writeToFile:atomically:' makes integer from pointer without a cast309660969#1438#180#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#206#0#206#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@24"Unused variable 'serNum'309660969#1618#115#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#208#0#208#0#19"unused variable '*'0(22@24"Unused variable 'serNum'309660969#1733#115#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#215#0#215#0#19"unused variable '*'0(22@24"Unused variable 'serNum'309660969#1968#115#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#232#0#232#0#19"unused variable '*'0(22@43"'Project' may not respond to '-projectName'309660969#2204#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#265#0#265#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#2338#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#266#0#266#0#26"'*' may not respond to '*'0(22@40"'Project' may not respond to '-clientID'309660969#2470#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#267#0#267#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-startDate'309660969#2601#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#268#0#268#0#26"'*' may not respond to '*'0(22@39"'Project' may not respond to '-endDate'309660969#2733#130#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#269#0#269#0#26"'*' may not respond to '*'0(22@42"'Project' may not respond to '-clientName'309660969#2863#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#270#0#270#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-totalTime'309660969#2996#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#271#0#271#0#26"'*' may not respond to '*'0(22@41"'Invoice' may not respond to '-projectID'309660969#3128#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#284#0#284#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#3260#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#288#0#288#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-sessionDate'309660969#3395#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#295#0#295#0#26"'*' may not respond to '*'0(22@40"'Session' may not respond to '-txtNotes'309660969#3529#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#298#0#298#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-sessionDate'309660969#3660#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#302#0#302#0#26"'*' may not respond to '*'0(22@40"'Session' may not respond to '-txtNotes'309660969#3794#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#304#0#304#0#26"'*' may not respond to '*'0(22@45"'Invoice' may not respond to '-invoiceNumber'309660969#4054#136#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#348#0#348#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#4320#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#409#0#409#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#4452#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#415#0#415#0#26"'*' may not respond to '*'0(22@21"Unused variable 'err'309660969#4587#112#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#402#0#402#0#19"unused variable '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#4824#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#470#0#470#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#5085#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#518#0#518#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#5217#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#524#0#524#0#26"'*' may not respond to '*'0(22@39"'Session' may not respond to '-endTime'309660969#5352#130#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#527#0#527#0#26"'*' may not respond to '*'0(22@41"'Session' may not respond to '-startTime'309660969#5482#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#527#0#527#0#26"'*' may not respond to '*'0(22@41"'Session' may not respond to '-startTime'309660969#5740#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#563#0#563#0#26"'*' may not respond to '*'0(22@40"'Session' may not respond to '-txtNotes'309660969#5999#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#597#0#597#0#26"'*' may not respond to '*'0(22@40"'Session' may not respond to '-txtNotes'309660969#6130#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#607#0#607#0#26"'*' may not respond to '*'0(22@43"'Profile' may not respond to '-profileName'309660969#6390#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#674#0#674#0#26"'*' may not respond to '*'0(22@43"'Profile' may not respond to '-profileName'309660969#6524#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#678#0#678#0#26"'*' may not respond to '*'0(22@46"'Profile' may not respond to '-profileAddress'309660969#6658#137#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#679#0#679#0#26"'*' may not respond to '*'0(22@43"'Profile' may not respond to '-profileCity'309660969#6795#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#680#0#680#0#26"'*' may not respond to '*'0(22@44"'Profile' may not respond to '-profileState'309660969#6929#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#681#0#681#0#26"'*' may not respond to '*'0(22@42"'Profile' may not respond to '-profileZip'309660969#7064#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#682#0#682#0#26"'*' may not respond to '*'0(22@44"'Profile' may not respond to '-profilePhone'309660969#7197#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#683#0#683#0#26"'*' may not respond to '*'0(22@45"'Invoice' may not respond to '-invoiceNumber'309660969#7332#136#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#688#0#688#0#26"'*' may not respond to '*'0(22@42"'Invoice' may not respond to '-clientName'309660969#7468#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#689#0#689#0#26"'*' may not respond to '*'0(22@40"'Invoice' may not respond to '-clientID'309660969#7601#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#692#0#692#0#26"'*' may not respond to '*'0(22@27"No '-clientID' method found309660969#7732#118#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#695#0#695#0#19"no '*' method found0(22@32"No '-streetAddress' method found309660969#7850#123#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#697#0#697#0#19"no '*' method found0(22@23"No '-city' method found309660969#7973#114#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#698#0#698#0#19"no '*' method found0(22@81"Passing argument 1 of 'setStringValue:' makes pointer from integer without a cast309660969#8087#172#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#699#0#699#0#0"0(22@29"No '-postalCode' method found309660969#8259#120#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#700#0#700#0#19"no '*' method found0(22@44"'Invoice' may not respond to '-approvalName'309660969#8379#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#704#0#704#0#26"'*' may not respond to '*'0(22@44"'Invoice' may not respond to '-invoiceTerms'309660969#8514#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#705#0#705#0#26"'*' may not respond to '*'0(22@43"'Invoice' may not respond to '-projectName'309660969#8649#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#706#0#706#0#26"'*' may not respond to '*'0(22@44"'Invoice' may not respond to '-invoiceNotes'309660969#8783#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#708#0#708#0#26"'*' may not respond to '*'0(22@48"'Invoice' may not respond to '-invoiceMaterials'309660969#8918#139#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#710#0#710#0#26"'*' may not respond to '*'0(22@41"'Invoice' may not respond to '-totalTime'309660969#9057#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#711#0#711#0#26"'*' may not respond to '*'0(22@44"'Invoice' may not respond to '-SinvoiceRate'309660969#9189#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#713#0#713#0#26"'*' may not respond to '*'0(22@41"'Invoice' may not respond to '-StotalDue'309660969#9324#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#714#0#714#0#26"'*' may not respond to '*'0(22@47"'Invoice' may not respond to '-SmaterialsTotal'309660969#9456#138#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#715#0#715#0#26"'*' may not respond to '*'0(22@47"'Invoice' may not respond to '-SinvoiceDeposit'309660969#9594#138#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#716#0#716#0#26"'*' may not respond to '*'0(22@43"'Invoice' may not respond to '-SgrandTotal'309660969#9732#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#717#0#717#0#26"'*' may not respond to '*'0(22@43"'Invoice' may not respond to '-checkNumber'309660969#9866#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#718#0#718#0#26"'*' may not respond to '*'0(22@43"'Invoice' may not respond to '-invoiceDate'309660969#10000#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#730#0#730#0#26"'*' may not respond to '*'0(22@163"Incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type309660969#10134#254#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#738#0#738#0#0"0(22@41"'Invoice' may not respond to '-startDate'309660969#10388#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#741#0#741#0#26"'*' may not respond to '*'0(22@163"Incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type309660969#10520#254#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#749#0#749#0#0"0(22@39"'Invoice' may not respond to '-endDate'309660969#10774#130#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#752#0#752#0#26"'*' may not respond to '*'0(22@163"Incompatible Objective-C types 'struct NSDate * volatile', expected 'struct NSString *' when passing argument 1 of 'setStringValue:' from distinct Objective-C type309660969#10904#254#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#759#0#759#0#0"0(22@42"'Session' may not respond to '-clientName'309660969#11283#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#891#0#891#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-projectName'309660969#11416#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#891#0#891#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#11550#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#893#0#893#0#26"'*' may not respond to '*'0(22@42"'Session' may not respond to '-clientName'309660969#11685#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#900#0#900#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-projectName'309660969#11818#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#901#0#901#0#26"'*' may not respond to '*'0(22@43"'Project' may not respond to '-projectName'309660969#11952#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#906#0#906#0#26"'*' may not respond to '*'0(22@42"'Project' may not respond to '-clientName'309660969#12086#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#906#0#906#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#12219#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#907#0#907#0#26"'*' may not respond to '*'0(22@43"'Project' may not respond to '-projectName'309660969#12351#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#908#0#908#0#26"'*' may not respond to '*'0(22@42"'Project' may not respond to '-clientName'309660969#12485#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#909#0#909#0#26"'*' may not respond to '*'0(22@41"'Session' may not respond to '-sessionID'309660969#12618#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#914#0#914#0#26"'*' may not respond to '*'0(22@41"'Session' may not respond to '-sessionID'309660969#12750#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#914#0#914#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#12882#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#915#0#915#0#26"'*' may not respond to '*'0(22@39"'Session' may not respond to '-endTime'309660969#13017#130#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#921#0#921#0#26"'*' may not respond to '*'0(22@43"'Project' may not respond to '-projectName'309660969#13268#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#984#0#984#0#26"'*' may not respond to '*'0(22@42"'Project' may not respond to '-clientName'309660969#13402#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#985#0#985#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#13535#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#989#0#989#0#26"'*' may not respond to '*'0(22@38"'Client' may not respond to '-company'309660969#13788#130#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1032#0#1032#0#26"'*' may not respond to '*'0(22@39"'Client' may not respond to '-clientID'309660969#13918#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1036#0#1036#0#26"'*' may not respond to '*'0(22@28"No '-sessionID' method found309660969#14173#120#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1138#0#1138#0#19"no '*' method found0(22@28"No '-sessionID' method found309660969#14293#120#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1143#0#1143#0#19"no '*' method found0(22@24"Unused variable 'rowObj'309660969#14413#116#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1133#0#1133#0#19"unused variable '*'0(22@49"'appController' may not respond to '-setClients:'309660969#14656#141#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1573#0#1573#0#26"'*' may not respond to '*'0(22@56"'appController' may not respond to '-setStoredSessions:'309660969#14797#148#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1587#0#1587#0#26"'*' may not respond to '*'0(22@41"'Project' may not respond to '-projectID'309660969#15077#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1744#0#1744#0#26"'*' may not respond to '*'0(22@44"'Session' may not respond to '-projectIDref'309660969#15210#136#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1748#0#1748#0#26"'*' may not respond to '*'0(22@42"'Session' may not respond to '-clientName'309660969#15346#134#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1755#0#1755#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-projectName'309660969#15480#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1755#0#1755#0#26"'*' may not respond to '*'0(22@43"'Session' may not respond to '-sessionDate'309660969#15615#135#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1756#0#1756#0#26"'*' may not respond to '*'0(22@41"'Session' may not respond to '-startTime'309660969#15750#133#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1756#0#1756#0#26"'*' may not respond to '*'0(22@39"'Session' may not respond to '-endTime'309660969#15883#131#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1757#0#1757#0#26"'*' may not respond to '*'0(22@40"'Session' may not respond to '-txtNotes'309660969#16014#132#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1757#0#1757#0#26"'*' may not respond to '*'0(22@28"Unused variable 'dateFormat'309660969#16146#120#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1726#0#1726#0#19"unused variable '*'0(22@27"Unused variable 'csvString'309660969#16266#119#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1717#0#1717#0#19"unused variable '*'0(23@13"At top level:309660969#16385#91#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#0#0#0#0#0"0(22@50"Incomplete implementation of class 'appController'309660969#16476#142#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1809#0#1809#0#38"incomplete implementation of class '*'0(22@86"Method definition for '+dateWithYear:month:day:hour:minute:second:timeZone:' not found309660969#16618#178#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1809#0#1809#0#35"method definition for '*' not found0(22@50"Incomplete implementation of class 'appController'309660969#16796#142#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1809#0#1809#0#38"incomplete implementation of class '*'0(22@52"Method definition for '-addStoredSessions' not found309660969#16938#144#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1809#0#1809#0#35"method definition for '*' not found0(22@70"Method definition for '-sheetDidEnd:returnCode:contectInfo:' not found309660969#17082#162#0(6@75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m309660689#1809#0#1809#0#35"method definition for '*' not found0(0#0#75"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m4300885448#1509"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/appController.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/appController.o0#
-
-CCompileC build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/main.o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660969.264316
-e309660969.582528
-r1
-xCompileC
-xbuild/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/main.o
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m309660969#309660969#0(0"0(0#0#66"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m4300885448#1491"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -include /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/main.m -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/main.o0#
-
-CCopyPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/rgLicTBBTS.plist rgLicTBBTS.plist
-s309660963.518584
-e309660963.594746
-r1
-xCopyPlistFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/rgLicTBBTS.plist
-xrgLicTBBTS.plist
-lSLF07#2@21"Copy rgLicTBBTS.plist309660963#309660963#0(0"0(0#0#76"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/rgLicTBBTS.plist4300885448#298"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist rgLicTBBTS.plist --outdir /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCopyPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/tbSettings.plist tbSettings.plist
-s309660963.572977
-e309660963.606275
-r1
-xCopyPlistFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/tbSettings.plist
-xtbSettings.plist
-lSLF07#2@21"Copy tbSettings.plist309660963#309660963#0(0"0(0#0#76"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/tbSettings.plist4300885448#298"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist tbSettings.plist --outdir /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s309660962.919192
-e309660963.516598
-r1
-xCopyStringsFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings309660962#309660963#0(0"0(0#0#91"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/InfoPlist.strings4300885448#419"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj0#
-
-CCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Localizable.strings English.lproj/Localizable.strings
-s309660963.172296
-e309660963.518469
-r1
-xCopyStringsFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Localizable.strings
-xEnglish.lproj/Localizable.strings
-lSLF07#2@38"Copy English.lproj/Localizable.strings309660963#309660963#0(0"0(0#0#93"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Localizable.strings4300885448#420"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/Localizable.strings --outdir /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj0#
-
-CCopyStringsFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/Localizable.strings Spanish.lproj/Localizable.strings
-s309660963.516753
-e309660963.572848
-r1
-xCopyStringsFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/Localizable.strings
-xSpanish.lproj/Localizable.strings
-lSLF07#2@38"Copy Spanish.lproj/Localizable.strings309660963#309660963#0(0"0(0#0#93"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/Localizable.strings4300885448#420"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 Spanish.lproj/Localizable.strings --outdir /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj0#
-
-CCpResource "build/Release/TrackAndBill_OSX.app/Contents/Resources/OutlineView code" "OutlineView code"
-s309660962.967834
-e309660963.136708
-r1
-xCpResource
-xbuild/Release/TrackAndBill_OSX.app/Contents/Resources/OutlineView code
-xOutlineView code
-lSLF07#2@21"Copy OutlineView code309660962#309660963#0(0"0(0#0#76"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/OutlineView code4300885448#429"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/OutlineView code" /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/AppIcon.icns AppIcon.icns
-s309660963.166223
-e309660963.216076
-r1
-xCpResource
-xbuild/Release/TrackAndBill_OSX.app/Contents/Resources/AppIcon.icns
-xAppIcon.icns
-lSLF07#2@17"Copy AppIcon.icns309660963#309660963#0(0"0(0#0#72"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/AppIcon.icns4300885448#423"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/AppIcon.icns /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo ToDo
-s309660963.164662
-e309660963.193856
-r1
-xCpResource
-xbuild/Release/TrackAndBill_OSX.app/Contents/Resources/ToDo
-xToDo
-lSLF07#2@9"Copy ToDo309660963#309660963#0(0"0(0#0#64"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/ToDo4300885448#415"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/ToDo /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/calendar.icns calendar.icns
-s309660963.170998
-e309660963.216294
-r1
-xCpResource
-xbuild/Release/TrackAndBill_OSX.app/Contents/Resources/calendar.icns
-xcalendar.icns
-lSLF07#2@18"Copy calendar.icns309660963#309660963#0(0"0(0#0#73"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/calendar.icns4300885448#424"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/calendar.icns /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CCpResource build/Release/TrackAndBill_OSX.app/Contents/Resources/icon_62E128E2.icns icon_62E128E2.icns
-s309660963.167101
-e309660963.214653
-r1
-xCpResource
-xbuild/Release/TrackAndBill_OSX.app/Contents/Resources/icon_62E128E2.icns
-xicon_62E128E2.icns
-lSLF07#2@23"Copy icon_62E128E2.icns309660963#309660963#0(0"0(0#0#78"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/icon_62E128E2.icns4300885448#429"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/icon_62E128E2.icns /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources0#
-
-CLd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX normal ppc
-s309660971.792651
-e309660972.295201
-r1
-xLd
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX
-xnormal
-xppc
-lSLF07#2@131"Link /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX309660971#309660972#0(0"0(0#0#0"4300885448#835"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -filelist /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/Objects-normal/ppc/TrackAndBill_OSX.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/MacOS/TrackAndBill_OSX0#
-
-CProcessInfoPlistFile /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Info.plist Info.plist
-s309660961.271531
-e309660961.278460
-r1
-xProcessInfoPlistFile
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Info.plist
-xInfo.plist
-lSLF07#2@18"Process Info.plist309660961#309660961#0(0"0(0#0#70"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Info.plist4300885448#387"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    builtin-infoPlistUtility Info.plist -genpkginfo /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch.gch TrackAndBill_OSX_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
-s309660963.606441
-e309660969.264122
-r1
-xProcessPCH
-x/var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch.gch
-xTrackAndBill_OSX_Prefix.pch
-xnormal
-xppc
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@38"Precompile TrackAndBill_OSX_Prefix.pch309660963#309660969#0(0"0(0#0#87"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/TrackAndBill_OSX_Prefix.pch4300885448#1368"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G4 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/TrackAndBill_OSX.hmap -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/../../CocoaMySQL -F/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/include -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources/ppc -I/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/TrackAndBill_OSX.build/Release/TrackAndBill_OSX.build/DerivedSources -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/TrackAndBill_OSX_Prefix.pch -o /var/folders/NY/NYUDXhCKFTWZ96EzOnGy8E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TrackAndBill_OSX_Prefix-chhefcohnhgcymcmtzneusshcztt/TrackAndBill_OSX_Prefix.pch.gch0#
-
-CStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib
-s309660961.278588
-e309660962.967695
-r1
-xStripNIB
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib
-lSLF07#2@35"StripNIB English.lproj/MainMenu.nib309660961#309660962#0(0"0(0#0#86"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib4300885448#369"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/usr/bin/ibtool --strip /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/MainMenu.nib0#
-
-CStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib
-s309660962.968823
-e309660963.163157
-r1
-xStripNIB
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib
-lSLF07#2@38"StripNIB English.lproj/Preferences.nib309660962#309660963#0(0"0(0#0#89"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib4300885448#375"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/usr/bin/ibtool --strip /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/English.lproj/Preferences.nib --output-format human-readable-text /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/English.lproj/Preferences.nib0#
-
-CStripNIB /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib
-s309660961.280307
-e309660962.918418
-r1
-xStripNIB
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib
-lSLF07#2@35"StripNIB Spanish.lproj/MainMenu.nib309660961#309660962#0(0"0(0#0#86"/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib4300885448#369"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /Developer/usr/bin/ibtool --strip /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app/Contents/Resources/Spanish.lproj/MainMenu.nib --output-format human-readable-text /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/Spanish.lproj/MainMenu.nib0#
-
-CTouch /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app
-s309660972.295380
-e309660972.301088
-r1
-xTouch
-x/Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app
-lSLF07#2@100"Touch /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app309660972#309660972#0(0"0(0#0#0"4300885448#184"    cd /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX    /usr/bin/touch -c /Users/bill/Cocoa_Development/TrackAndBill/TrackAndBill_OSX/build/Release/TrackAndBill_OSX.app0#
-

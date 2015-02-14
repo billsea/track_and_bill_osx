@@ -22,6 +22,8 @@
 
 }
 
+-(NSString *)getProfileName;
+
 - (void)setProfileName:(NSString *)pName;
 - (void)setProfileAddress:(NSString *)pAddress;
 - (void)setProfileCity:(NSString *)pCity;
@@ -30,5 +32,6 @@
 - (void)setProfilePhone:(NSString *)pPhone;
 - (void)setProfileEmail:(NSString *)pEmail;
 - (void)setProfileContact:(NSString *)pContact;
-
+- (void) encodeWithCoder: (NSCoder *)coder;
+- (id) initWithCoder: (NSCoder *)coder;
 @end

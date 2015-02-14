@@ -79,7 +79,8 @@ static FileSystemItem *rootItem = nil;
         NSString *fullPath = [self fullPath];
         BOOL isDir, valid = [fileManager fileExistsAtPath:fullPath isDirectory:&isDir];
         if (valid && isDir) {
-            NSArray *array = [fileManager directoryContentsAtPath:fullPath];
+            NSArray *array = [fileManager contentsOfDirectoryAtPath:fullPath error:nil];
+            //NSArray *array = [fileManager directoryContentsAtPath:fullPath];
             int cnt, numChildren = [array count];
             children = [[NSMutableArray alloc] initWithCapacity:numChildren];
             for (cnt = 0; cnt < numChildren; cnt++) {

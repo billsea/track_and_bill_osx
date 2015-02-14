@@ -25,12 +25,16 @@
 	return self;
 }
 
+-(NSString *)getProfileName
+{
+    return profileName;
+}
 
-- (NSString *)profileName
+-(NSString *)profileName
 {
 	return profileName;	
 }
-- (NSString *)profileAddress
+-(NSString *)profileAddress
 {
 	return profileAddress;	
 }
@@ -59,7 +63,7 @@
 	return profileContact;	
 }
 
-///////////
+
 - (void)setProfileName:(NSString *)pName
 {
 	pName = [pName copy]; 

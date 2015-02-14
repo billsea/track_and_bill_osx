@@ -336,7 +336,7 @@
 	[invoiceMaterials release];
 	invoiceMaterials = iMaterials;	
 }
-- (void)setMaterialsTotal:(float)mTotal
+- (void)setMaterialsTotal:(double)mTotal
 {
 	materialsTotal = mTotal;
 	[self setSmaterialsTotal:[NSString stringWithFormat:@"%1.2f",materialsTotal]];
@@ -348,7 +348,7 @@
 	SmaterialsTotal = SmatTotal;
 }
 
-- (void)setInvoiceDeposit:(float)iDeposit
+- (void)setInvoiceDeposit:(double)iDeposit
 {
 	invoiceDeposit = iDeposit;
 	[self setSinvoiceDeposit:[NSString stringWithFormat:@"%1.2f", invoiceDeposit]];

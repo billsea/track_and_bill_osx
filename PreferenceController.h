@@ -52,6 +52,6 @@
 - (NSString *) pathForDataFile;
 - (void) loadDataFromDisk;
 -(void) loadSettings;
--(void) writeSettings:(NSString*)plistKey:(NSString*)plistValue;
+-(void) writeSettings:(NSString*)plistKey :(NSString*)plistValue;
 - (int)getDateFormatSetting;
 @end

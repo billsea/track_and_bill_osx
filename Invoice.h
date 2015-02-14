@@ -48,6 +48,7 @@
 - (void)setTotalTime:(NSString *)tTime;
 - (void)setProjectID:(NSString *)pID;
 - (void)setClientID:(NSString *)cID;
+
 - (void)setInvoiceNumber:(NSString *)iNumber;
 - (void)setTotalDue:(float)totDue;
 - (void)setStotalDue:(NSString *)Sdue;
@@ -61,7 +62,7 @@
 - (void)setInvoiceMaterials:(NSString *)iMaterials;
 - (void)setMaterialsTotal:(double)mTotal;
 - (void)setSmaterialsTotal:(NSString *)SmatTotal;
-- (void)setInvoiceScale:(NSString *)iScale;
+//- (void)setInvoiceScale:(NSString *)iScale;
 - (void)setInvoiceDeposit:(double)iDeposit;
 - (void)setSinvoiceDeposit:(NSString *)Sdep;
 - (void)computeTotalDue;

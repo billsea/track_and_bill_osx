@@ -127,7 +127,9 @@
 - (IBAction)deleteInvoice:(id)sender;
 - (void)setDateFormat;
 - (int)getDateFormatSetting;
-
+- (void)sheetDidEnd:(NSWindow *)sheet
+         returnCode:(int)returnCode
+        contextInfo:(void *)contextInfo;
 
 // Registration
 - (void)showRegistrationSheet:(BOOL)useCount;
@@ -138,13 +140,13 @@
 
 - (NSString *)createInvoiceNumber;
 
-+(id)dateWithYear: (int)year
-			month:(unsigned)month
-			  day:(unsigned)day
-			 hour:(unsigned)hour
-		   minute:(unsigned)minute
-		   second:(unsigned)second
-		 timeZone:(NSTimeZone *)aTimeZone;
+//+(id)dateWithYear: (int)year
+//			month:(unsigned)month
+//			  day:(unsigned)day
+//			 hour:(unsigned)hour
+//		   minute:(unsigned)minute
+//		   second:(unsigned)second
+//		 timeZone:(NSTimeZone *)aTimeZone;
 
 //saving and loading
 - (NSString *) pathForDataFile:(int)sFile;

@@ -10,7 +10,6 @@
 @implementation appController
 
 
-
 - (id)init
 {
 
@@ -125,7 +124,8 @@
 			
 			regInitDate= [regDict objectForKey:@"regInit"]  ;
 			
-			NSDate * dInitDate = regInitDate;// format: 2007-01-14 17:15:30 -0800
+            NSDate * dInitDate = [NSDate dateWithString:regInitDate];
+			//NSDate * dInitDate = regInitDate;// format: 2007-01-14 17:15:30 -0800
 				
 				long tSecs1 = [today timeIntervalSinceDate:dInitDate];
 				expiredDays = tSecs1/86400;
@@ -134,7 +134,9 @@
 			
 			regInitDate = [regDict objectForKey:@"regInit"];
 			
+            NSLog(@"regInitDate:%@", regInitDate);
 			//this seems odd but it works...
+            //NSDate * dInitDate = [NSDate dateWithString:regInitDate];
 			NSDate * dInitDate = regInitDate;// format: 2007-01-14 17:15:30 -0800
 				
 				long tSecs = [today timeIntervalSinceDate:dInitDate];
@@ -205,15 +207,13 @@
 		[regDict setObject:[regNumberField stringValue] forKey:@"serial"];
 		[regDict writeToFile:regPath atomically:nil]; //write back to rgLicTBBTS.plist file
 		
-		int serNum = NSRunAlertPanel(NSLocalizedString(@"regCompleted", @"regCompleted"), NSLocalizedString(@"regThanks", @"regThanks"),
-									 nil, nil,nil,nil);
+		//int serNum = NSRunAlertPanel(NSLocalizedString(@"regCompleted", @"regCompleted"), NSLocalizedString(@"regThanks", @"regThanks"),nil, nil,nil,nil);
 		
 		[NSApp endSheet:regCustomSheet returnCode:1];
 		[NSApp endSheet:regCustomSheet returnCode:1];
 	}else{
 		//Show error on registration
-		int serNum = NSRunAlertPanel(NSLocalizedString(@"regError", @"regError"), NSLocalizedString(@"regErrorMessage", @"regErrorMessage"),
-									 nil, nil,nil,nil);
+		//int serNum = NSRunAlertPanel(NSLocalizedString(@"regError", @"regError"), NSLocalizedString(@"regErrorMessage", @"regErrorMessage"),nil, nil,nil,nil);
 		
 	}
 }
@@ -229,8 +229,7 @@
 - (IBAction)unloadApp:(id)sender;
 {
 	
-	int serNum = NSRunAlertPanel(NSLocalizedString(@"evalThanks", @"evalThanks"), NSLocalizedString(@"evalRegNow", @"evalRegNow"),
-								 nil, nil,nil,nil);
+	//int serNum = NSRunAlertPanel(NSLocalizedString(@"evalThanks", @"evalThanks"), NSLocalizedString(@"evalRegNow", @"evalRegNow"),nil, nil,nil,nil);
 	
 // Terminate app
 	[NSApp endSheet:regCustomSheet returnCode:1];
@@ -378,10 +377,10 @@
 					unsigned int row = [rows lastIndex];
 			
 					//remove selected rows
-					while (row != NSNotFound){
+					//while (row != NSNotFound){
 						[arrInvoices removeObjectAtIndex:row];
 						row =[rows indexLessThanIndex:row];
-					}
+					//}
 					[invoicesView reloadData];
 				}else{
 					NSBeep();
@@ -399,7 +398,6 @@
 	NSString *selProjID;
 	NSString *targetProjID;
 	int i;
-	int err;
 	int selRow = [tableView selectedRow]; //projects table selected row
 	
 	
@@ -584,8 +582,8 @@
 		
 	//Logs
 	NSString *tString;
-	tString = [NSString stringWithFormat:@"%d", [selCell state]];
-	NSLog(@"Button State = %@",tString);
+	tString = [NSString stringWithFormat:@"%ld", (long)[selCell state]];
+	//NSLog(@"Button State = %@",tString);
 }
 
 //Show notes input sheet(window)
@@ -621,6 +619,7 @@
 	//return to normal event handling
 	[NSApp endSheet:notesWindow returnCode:1];
 }
+
 - (void)sheetDidEnd:(NSWindow *)sheet
 		 returnCode:(int)returnCode
 		contextInfo:(void *)contextInfo
@@ -658,122 +657,131 @@
 		rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];    
 		
         NSMutableArray *arrProfiles = [[NSMutableArray alloc] initWithArray: [rootObject valueForKey:@"profile"]];
-		Profile *uProfile;
-		if ([arrProfiles count] != 0){
-			[arrProfiles autorelease];
-			uProfile = [arrProfiles objectAtIndex:0];
+        
+		
+        
+		if ([arrProfiles count] == 0){
+            
+            int validateAction;
+            validateAction = NSRunAlertPanel(NSLocalizedString(@"profCheck", @"profCheck"), NSLocalizedString(@"profCheckMsg", @"profCheckMsg"),NSLocalizedString(@"0K", @"OK"), nil, nil);
+            
+    
+            
 		}else{
-			int validateAction;
-			validateAction = NSRunAlertPanel(NSLocalizedString(@"profCheck", @"profCheck"), NSLocalizedString(@"profCheckMsg", @"profCheckMsg"),NSLocalizedString(@"s0K", @"sOK"), nil, nil);
-			[uProfile release];
-		}
-		
-		
-		//profile data
-		NSString *emptystr = [[NSString alloc] initWithString:@""];
-		if ([[uProfile profileName] isEqual: emptystr]){
-			int validateAction;
-			validateAction = NSRunAlertPanel(NSLocalizedString(@"profCheck", @"profCheck"),NSLocalizedString(@"profNameCheckMsg", @"profNameCheckMsg"), NSLocalizedString(@"s0K", @"sOK"), nil, nil);
-		}
-		[txtMyName setStringValue:[uProfile profileName]];
-		[txtMyAddress setStringValue:[uProfile profileAddress]];
-		[txtMyCity setStringValue:[uProfile profileCity]];
-		[txtMyState setStringValue:[uProfile profileState]];
-		[txtMyZip setStringValue:[uProfile profileZip]];
-		[txtMyPhone setStringValue:[uProfile profilePhone]];
-		
-		
-		//client data
-		int i;
-		[txtInvoiceNumber setStringValue:[uInvoice invoiceNumber]];
-		[txtClientName setStringValue:[uInvoice clientName]];
-		NSString *x = [[NSString alloc] init];
-		NSString *y = [[NSString alloc] init];
-		x = [uInvoice clientID];
-		
-		for (i=0;i < [arrClients count]; i++){
-			y = [[arrClients objectAtIndex:i] clientID]; ;
-			if ([x isEqual: y]){
-				[txtClientAddress setStringValue:[[arrClients objectAtIndex:i] streetAddress]];
-			[txtClientCity setStringValue:[[arrClients objectAtIndex:i] city]];
-			[txtClientState setStringValue:[[arrClients objectAtIndex:i] state]];
-			[txtClientZip setStringValue:[[arrClients objectAtIndex:i] postalCode]];
-			}
-		}
+			Profile *uProfile;
+            [arrProfiles autorelease];
+            uProfile = [arrProfiles objectAtIndex:0];
+            
+            //profile data
+            NSString *emptystr = [[NSString alloc] initWithString:@""];
+            if ([[uProfile profileName] isEqual: emptystr]){
+                int validateAction;
+                validateAction = NSRunAlertPanel(NSLocalizedString(@"profCheck", @"profCheck"),NSLocalizedString(@"profNameCheckMsg", @"profNameCheckMsg"), NSLocalizedString(@"0K", @"OK"), nil, nil);
+            }
+            [txtMyName setStringValue:[uProfile profileName]];
+            [txtMyAddress setStringValue:[uProfile profileAddress]];
+            [txtMyCity setStringValue:[uProfile profileCity]];
+            [txtMyState setStringValue:[uProfile profileState]];
+            [txtMyZip setStringValue:[uProfile profileZip]];
+            [txtMyPhone setStringValue:[uProfile profilePhone]];
+            
+            
+            //client data
+            int i;
+            [txtInvoiceNumber setStringValue:[uInvoice invoiceNumber]];
+            [txtClientName setStringValue:[uInvoice clientName]];
+            NSString *x = [[NSString alloc] init];
+            NSString *y = [[NSString alloc] init];
+            x = [uInvoice clientID];
+            
+            for (i=0;i < [arrClients count]; i++){
+                y = [[arrClients objectAtIndex:i] clientID]; ;
+                if ([x isEqual: y]){
+                    [txtClientAddress setStringValue:[[arrClients objectAtIndex:i] streetAddress]];
+                [txtClientCity setStringValue:[[arrClients objectAtIndex:i] city]];
+                [txtClientState setStringValue:[[arrClients objectAtIndex:i] state]];
+                [txtClientZip setStringValue:[[arrClients objectAtIndex:i] postalCode]];
+                }
+            }
 
-		[txtApprovedBy setStringValue:[uInvoice approvalName]];
-		[txtTerms setStringValue:[uInvoice invoiceTerms]];
-		[txtProjectName setStringValue:[uInvoice projectName]];
+            [txtApprovedBy setStringValue:[uInvoice approvalName]];
+            [txtTerms setStringValue:[uInvoice invoiceTerms]];
+            [txtProjectName setStringValue:[uInvoice projectName]];
 
-		[txtServices setString:[uInvoice invoiceNotes]];
-		
-		[txtMaterials setString:[uInvoice invoiceMaterials]];
-		[txtHours setStringValue:[uInvoice totalTime]];
+            [txtServices setString:[uInvoice invoiceNotes]];
+            
+            [txtMaterials setString:[uInvoice invoiceMaterials]];
+            [txtHours setStringValue:[uInvoice totalTime]];
 
-		[txtRate setStringValue:[uInvoice SinvoiceRate]];
-		[txtSubTotal setStringValue:[uInvoice StotalDue]];
-		[txtMaterialsTotal setStringValue:[uInvoice SmaterialsTotal]];
-		[txtDeposit setStringValue:[uInvoice SinvoiceDeposit]];
-		[txtTotalDue setStringValue:[uInvoice SgrandTotal]];
-		[txtCheckNumber setStringValue:[uInvoice checkNumber] ];
-		
-		
-		//get current date format
-		NSDateFormatter *dateFormatter;
-		
-		if ([self getDateFormatSetting]==1){
-			dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"%d/%m/%y"allowNaturalLanguage:NO];
-		}else{
-			dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"%m/%d/%y"allowNaturalLanguage:NO];
-		}
-		
-		NSDate *invDate = [uInvoice invoiceDate];
-		NSString *MDY=[dateFormatter stringFromDate:invDate];
-		
-		@try{
-			[txtInvoiceDate setStringValue:MDY];
-		}
-		@catch(NSException *exception)
-			{
-				[txtInvoiceDate setStringValue:invDate];
-			}
-		
-		NSDate *stDate = [uInvoice startDate];
-		MDY=[dateFormatter stringFromDate:stDate];
-		
-		@try{
-			[txtStartDate setStringValue:MDY];
-		}
-		@catch(NSException *exception)
-		{
-			[txtStartDate setStringValue:stDate];
-		}
-		
-		NSDate *endDate = [uInvoice endDate];
-		MDY=[dateFormatter stringFromDate:endDate];
-		@try{
-		[txtEndDate setStringValue:MDY];
-		}
-		@catch(NSException *exception)
-		{
-			[txtEndDate setStringValue:endDate];
-		}
-		
-		//insert invoice image
-		NSString *settingsPath = [[NSBundle bundleWithIdentifier: @"com.primomedia.TrackAndBill"] pathForResource:@"tbSettings" ofType:@"plist"];
-		NSMutableDictionary * settingsDict;
-		settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:settingsPath];
-		
-		NSImage *invImage=[[NSImage alloc] initByReferencingFile:[settingsDict objectForKey:@"invoiceImage"]];
-		
-		[invoiceImageDisplay setImage:invImage];
-		
-		
-		[NSApp beginSheet:invoiceWindow 
-		   modalForWindow:[mainTabView window] 
-			modalDelegate:self
-		   didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:)
-			  contextInfo:NULL];
+            [txtRate setStringValue:[uInvoice SinvoiceRate]];
+            [txtSubTotal setStringValue:[uInvoice StotalDue]];
+            [txtMaterialsTotal setStringValue:[uInvoice SmaterialsTotal]];
+            [txtDeposit setStringValue:[uInvoice SinvoiceDeposit]];
+            [txtTotalDue setStringValue:[uInvoice SgrandTotal]];
+            [txtCheckNumber setStringValue:[uInvoice checkNumber] ];
+            
+            
+            //get current date format
+            NSDateFormatter *dateFormatter;
+            
+            if ([self getDateFormatSetting]==1){
+                dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"%d/%m/%y"allowNaturalLanguage:NO];
+            }else{
+                dateFormatter = [[NSDateFormatter alloc] initWithDateFormat:@"%m/%d/%y"allowNaturalLanguage:NO];
+            }
+            
+            NSDate *invDate = [uInvoice invoiceDate];
+            NSString *MDY=[dateFormatter stringFromDate:invDate];
+            
+            @try{
+                
+                [txtInvoiceDate setStringValue:MDY];
+            }
+            @catch(NSException *exception)
+            {
+                
+                //[txtInvoiceDate setStringValue:invDate];
+            }
+            
+            NSDate *stDate = [uInvoice startDate];
+            MDY=[dateFormatter stringFromDate:stDate];
+            
+            @try{
+                [txtStartDate setStringValue:MDY];
+            }
+            @catch(NSException *exception)
+            {
+                //[txtStartDate setStringValue:stDate];
+            }
+            
+            NSDate *endDate = [uInvoice endDate];
+            MDY=[dateFormatter stringFromDate:endDate];
+            @try{
+            [txtEndDate setStringValue:MDY];
+            }
+            @catch(NSException *exception)
+            {
+                //[txtEndDate setStringValue:endDate];
+            }
+            
+            //insert invoice image
+            NSString *settingsPath = [[NSBundle bundleWithIdentifier: @"com.primomedia.TrackAndBill"] pathForResource:@"tbSettings" ofType:@"plist"];
+            NSMutableDictionary * settingsDict;
+            settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:settingsPath];
+            
+            NSImage *invImage=[[NSImage alloc] initByReferencingFile:[settingsDict objectForKey:@"invoiceImage"]];
+            
+            [invoiceImageDisplay setImage:invImage];
+            
+            
+            [NSApp beginSheet:invoiceWindow 
+               modalForWindow:[mainTabView window] 
+                modalDelegate:self
+               didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:)
+                  contextInfo:NULL];
+            
+            [uProfile release];
+        }
 	}
 }
 - (IBAction)endInvoiceWindow:(id)sender
@@ -1071,19 +1079,19 @@
 		NSString *formatString;
 		
 		if ([self getDateFormatSetting]==1){
-			formatString = [NSString stringWithFormat:@"%d/%m/%Y"];
+			formatString = @"%d/%m/%Y";
 		}else{
-			formatString = [NSString stringWithFormat:@"%m/%d/%Y"];
+			formatString = @"%m/%d/%Y";
 		}
 		
 		NSDateFormatter *dateFormat = [[NSDateFormatter alloc] initWithDateFormat:formatString allowNaturalLanguage:NO];
 		[[dateCol dataCell] setFormatter:dateFormat];
 				
-		NSLog(@"COLUMN FORMATTER ========  %@",[[[dateCol dataCell] formatter] dateFormat] );
+		//NSLog(@"COLUMN FORMATTER ========  %@",[[[dateCol dataCell] formatter] dateFormat] );
 			
 			//NSLog(@"COLUMMMMMNNNNN ::::: %d", [[tableView tableColumns] count]);
 	}@catch (NSException *exception) {
-		NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
+		//NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
 		
 	}
 ////////////////////
@@ -1130,39 +1138,35 @@
 				unsigned int row = [rows lastIndex];
 				
 				//remove selected rows
-				NSObject * rowObj;
 				
-				while (row != NSNotFound){
+				//while (row != NSNotFound){
 					//remove from stored list
 					//search stored sessions for matching session id.
 					x = [[NSString alloc] initWithString:[[arrSessions objectAtIndex:row] sessionID]];
 					for (i=0; i<[storedSessions count];i++){
 		
-					@try
-					{
-						y=[[NSString alloc] initWithString:[[storedSessions objectAtIndex:i] sessionID]];
-						if ([x isEqual:y]){
-							[storedSessions removeObjectAtIndex:i];
-						}
-						
-						[arrSessions removeObjectAtIndex:row];
-						row =[rows indexLessThanIndex:row];
-					
-					}@catch (NSException *exception) {
-						NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
-						
+                        @try
+                        {
+                            y=[[NSString alloc] initWithString:[[storedSessions objectAtIndex:i] sessionID]];
+                            if ([x isEqual:y]){
+                                [storedSessions removeObjectAtIndex:i];
+                            }
+                            
+                            [arrSessions removeObjectAtIndex:row];
+                            row =[rows indexLessThanIndex:row];
+                        
+                        }@catch (NSException *exception) {
+                            NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
+                            
+                        }
+                        
 					}
-						
-
-					
-					}
-					
 				
-				}
-				
+				//}
 				
 				[sessionsView reloadData];
 				[self viewSelectedSessions];
+                
 			}else{
 				NSBeep();
 			}
@@ -1188,11 +1192,11 @@
 				unsigned int row = [rows lastIndex];
 				
 				//remove selected rows
-				while (row != NSNotFound){
+				//while (row != NSNotFound){
 					//remove from stored list
 					[storedSessions removeObjectAtIndex:row];
 					row =[rows indexLessThanIndex:row];
-				}
+				//}
 				[self viewSelectedSessions];
 				[allSessionsView reloadData];
 
@@ -1214,11 +1218,11 @@
 			unsigned int row = [rows lastIndex];
 			
 			//remove selected rows
-			while (row != NSNotFound){
+			//while (row != NSNotFound){
 
 				[arrSessions removeObjectAtIndex:row];
 				row =[rows indexLessThanIndex:row];
-			}
+			//}
 			
 			[sessionsView reloadData];
 
@@ -1245,10 +1249,10 @@
 				unsigned int row = [rows lastIndex];
 			
 				//remove selected rows
-				while (row != NSNotFound){
+				//while (row != NSNotFound){
 					[arrProjects removeObjectAtIndex:row];
 					row =[rows indexLessThanIndex:row];
-				}
+				//}
 				[tableView reloadData];
 			}else{
 				NSBeep();
@@ -1275,10 +1279,10 @@
 				unsigned int row = [rows lastIndex];
 				
 				//remove selected rows
-				while (row != NSNotFound){
+				//while (row != NSNotFound){
 					[arrClients removeObjectAtIndex:row];
 					row =[rows indexLessThanIndex:row];
-				}
+				//}
 				[clientsView reloadData];
 			}else{
 				NSBeep();
@@ -1476,7 +1480,8 @@ return nil;
 	
 	if ([fileManager fileExistsAtPath: folder] == NO)
 	{
-		[fileManager createDirectoryAtPath: folder attributes: nil];
+        [fileManager createDirectoryAtPath:folder withIntermediateDirectories:NO attributes:nil error:nil];
+		//[fileManager createDirectoryAtPath: folder attributes: nil];
 	}
 	
 	switch (sFile){
@@ -1668,7 +1673,8 @@ return nil;
 	NSView *v= invoiceBox;
 	printOp = [NSPrintOperation printOperationWithView:v
 											 printInfo:printInfo];
-	[printOp setShowPanels:YES];
+    [printOp setShowsPrintPanel:YES];
+	//[printOp setShowPanels:YES];
 	[printOp runOperation];
 }
 
@@ -1685,7 +1691,7 @@ return nil;
 - (IBAction) openPrimoSite:(id)sender
 
 {
-	NSString *stringURL = @"http://primo-media.com";
+	NSString *stringURL = @"http://loudsoftware.com";
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:stringURL]];
 	
 
@@ -1714,28 +1720,27 @@ return nil;
 		int panelVal;
 		NSString *x = [[NSString alloc] init];
 		NSString *y = [[NSString alloc] init];
-		NSString *csvString= @"";
+
 		
 		NSString *formatString;
 		
 		if ([self getDateFormatSetting]==1){
-			formatString = [NSString stringWithFormat:@"%d/%m/%Y"];
+			formatString = @"%d/%m/%Y";
 		}else{
-			formatString = [NSString stringWithFormat:@"%m/%d/%Y"];
+			formatString = @"%m/%d/%Y";
 		}
-		NSDateFormatter *dateFormat = [[NSDateFormatter alloc] initWithDateFormat:formatString allowNaturalLanguage:NO];
 		
 
 		//show save dialog box, and set file path and name
 		NSSavePanel * savePanel= [[NSSavePanel alloc] init];
 		panelVal = [savePanel runModal];	
 		
-		NSString *path = [savePanel filename];
+    
+        NSURL *path = [savePanel URL];
 		
-		NSLog(@"save csv path: %@", path);
+		//NSLog(@"save csv path: %@", path);
 		
-		NSMutableArray * fileArray = [[NSMutableArray alloc] init];	
-		////////////
+		NSMutableArray * fileArray = [[NSMutableArray alloc] init];
 		
 		NSString * headerString;
 		headerString = [NSString stringWithFormat:@",'Client','Project','Date','Start Time','End Time','Notes',"];
@@ -1764,10 +1769,10 @@ return nil;
 		
 	@try{
 		//write to file
-		result = [fileArray writeToFile:path atomically:0];
+		result = [fileArray writeToFile:[path absoluteString] atomically:0];
 		
 	}@catch (NSException *exception) {
-		NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
+		//NSLog(@"main: Caught %@: %@", [exception name], [exception  reason]);
 		
 	}
 
