@@ -240,7 +240,7 @@
 - (IBAction) openRegistrationSite:(id)sender
 {
 	
-	NSString *stringURL = @"http://primo-media.com/?page_Request=Downloads";
+	NSString *stringURL = @"http://loudsoftware.com/?page_id=277";
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:stringURL]];
 }
 
@@ -1305,6 +1305,9 @@
 	NSLog(@"clients count = %@",tString);
 	
 	[clientsView reloadData];
+    
+    //scroll table view to new row
+    [clientsView scrollRowToVisible:[arrClients count] - 1];
 	
 	//change tab
 	NSTabViewItem *selItem = [mainTabView tabViewItemAtIndex:0];
@@ -1691,7 +1694,7 @@ return nil;
 - (IBAction) openPrimoSite:(id)sender
 
 {
-	NSString *stringURL = @"http://loudsoftware.com";
+	NSString *stringURL = @"http://loudsoftware.com/?page_id=207";
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:stringURL]];
 	
 
@@ -1699,7 +1702,7 @@ return nil;
 
 - (IBAction) appHelpLink:(id)sender
 {
-	NSString *stringURL = @"http://primo-media.com/helpFiles/BTSTBmac_help/help_frameset.htm";	
+	NSString *stringURL = @"http://loudsoftware.com/?page_id=207";
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:stringURL]];
 }
 
