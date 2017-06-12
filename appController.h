@@ -16,10 +16,10 @@
 	IBOutlet NSTextView *txtNotesEntry;
 	
 	IBOutlet NSWindow *invoiceWindow;
-	IBOutlet NSTextField *txtInvoiceNumber;
-	
-	//preference labels
-	IBOutlet NSTextField *lblPrefsName;
+        IBOutlet NSTextField *txtInvoiceNumber;
+
+        // preference labels
+        IBOutlet NSTextField *lblPrefsName;
 	IBOutlet NSTextField *lblPrefsAddress;
 	IBOutlet NSTextField *lblPrefsCity;
 	IBOutlet NSTextField *lblPrefsState;
@@ -30,8 +30,6 @@
 
 	IBOutlet NSButton * prefsSaveButton;
 	IBOutlet NSButton * prefsCloseButton;
-	/////////////////////
-		
 	
 	IBOutlet NSTextField *txtMyName;
 	IBOutlet NSTextField *txtMyAddress;
@@ -61,15 +59,9 @@
 	IBOutlet NSTextField *txtTotalDue;
 	IBOutlet NSTextField *txtCheckNumber;
 	IBOutlet NSImageView *invoiceImageDisplay;
-	
-	
-	
 	IBOutlet NSMenuItem *fileMenuSave;
 	
 	PreferenceController *preferenceController;
-	
-
-	
 	IBOutlet NSBox *invoiceBox;
 	
 	NSMutableArray *arrProjects;
@@ -85,10 +77,6 @@
 	IBOutlet NSButton * regLater;
 	IBOutlet NSTextField * remainingEvaluationTime;
 	IBOutlet NSButton * butQuit;
-	
-	
-
-
 }
 
 - (NSString *)createRandomID;
@@ -139,14 +127,6 @@
 - (IBAction)unloadApp:(id)sender;
 
 - (NSString *)createInvoiceNumber;
-
-//+(id)dateWithYear: (int)year
-//			month:(unsigned)month
-//			  day:(unsigned)day
-//			 hour:(unsigned)hour
-//		   minute:(unsigned)minute
-//		   second:(unsigned)second
-//		 timeZone:(NSTimeZone *)aTimeZone;
 
 //saving and loading
 - (NSString *) pathForDataFile:(int)sFile;

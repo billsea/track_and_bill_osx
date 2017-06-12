@@ -13,8 +13,8 @@
 	
 	NSString *profileName;
 	NSString *profileAddress;
-	NSString *profileCity;
-	NSString *profileState;
+        NSString *profileCity;
+        NSString *profileState;
 	NSString *profileZip;
 	NSString *profilePhone;
 	NSString *profileEmail;

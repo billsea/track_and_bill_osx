@@ -37,7 +37,6 @@
 	NSString *SinvoiceRate;
 	double grandTotal;
 	NSString *SgrandTotal;
-	
 }
 
 - (void)setProjectName:(NSString *)pName;

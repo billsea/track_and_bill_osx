@@ -8,15 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface Project : NSObject <NSCoding>{
-	NSString *projectName;
-	NSString *clientName;
-	NSDate *startDate;
-	NSDate *endDate;
-	NSString *totalTime;
-	NSString *projectID;
-	NSString *clientID;
+@interface Project : NSObject <NSCoding> {
+  NSString *projectName;
+  NSString *clientName;
+  NSDate *startDate;
+  NSDate *endDate;
+  NSString *totalTime;
+  NSString *projectID;
+  NSString *clientID;
 }
 
 - (void)setProjectName:(NSString *)pName;

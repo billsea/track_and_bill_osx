@@ -12,14 +12,8 @@
 
 - (id)init
 {
-
-	
 	self = [super init];
     if (self) {
-		
-	
-			
-		
 		//Register notification center observer
 		NSNotificationCenter *nc;
 		nc = [NSNotificationCenter defaultCenter];
@@ -50,8 +44,6 @@
 
 		//compute totaltime
 		[self computeTotalTime];
-
-			
 		
     }
 	return self;
@@ -59,10 +51,8 @@
 
 -(void)awakeFromNib
 {
-
 	//NSLog(@"nib loaded....");
 	[self evaluationCheck];
-
 }
 
 - (NSMutableArray *) arrProjects
@@ -177,7 +167,6 @@
 		[regLater setHidden:TRUE];
 		
 		[butQuit setHidden:FALSE];
-		
 	}
 	
 		
@@ -228,12 +217,9 @@
 
 - (IBAction)unloadApp:(id)sender;
 {
-	
-	//int serNum = NSRunAlertPanel(NSLocalizedString(@"evalThanks", @"evalThanks"), NSLocalizedString(@"evalRegNow", @"evalRegNow"),nil, nil,nil,nil);
-	
-// Terminate app
-	[NSApp endSheet:regCustomSheet returnCode:1];
-	[NSApp terminate:sender];
+  // Terminate app
+  [NSApp endSheet:regCustomSheet returnCode:1];
+  [NSApp terminate:sender];
 	
 }
 
@@ -248,82 +234,82 @@
 //////// End   ----- Evaluation and Registration Functions -----End  ////////////
 /////////////////////////////////////////////////////////////////////////////////
 
+- (IBAction)addInvoice:(id)sender {
+  Project *selProject = [[Project alloc] init];
+  Invoice *nInvoice = [[Invoice alloc] init];
+  int err;
+  int selRow = [tableView selectedRow]; // projects table selected row
 
+  if (selRow >= 0) {
 
-- (IBAction)addInvoice:(id)sender
-{
-	Project *selProject = [[Project alloc] init];
-	Invoice *nInvoice = [[Invoice alloc] init];
-	int err;
-	int selRow = [tableView selectedRow]; //projects table selected row
-	
-	if (selRow >=0) {
-		
-		selProject = [arrProjects objectAtIndex:selRow];
-		[nInvoice setInvoiceNumber:[self createInvoiceNumber]];
-		[nInvoice setProjectName:[selProject projectName]];
-		[nInvoice setProjectID:[selProject projectID]];
-		[nInvoice setClientID:[selProject clientID]];
-		[nInvoice setStartDate:[selProject startDate]];
-		[nInvoice setEndDate:[selProject endDate]];
-		[nInvoice setClientName:[selProject clientName]];
-		[nInvoice setTotalTime:[selProject totalTime]];
-		[nInvoice setApprovalName:@"-"];
-		[nInvoice setInvoiceRate:0.00];
-		
-		//invoice notes from session notes
-		NSString *allSessionNotes = [[NSString alloc] init];
-		Session *iSession;
-		int i;
-		NSString *x = [[NSString alloc] init];
-		NSString *y = [[NSString alloc] init];
-		NSDateFormatter *dateFormatter1 = [[NSDateFormatter alloc] initWithDateFormat:@"%m/%d/%y" allowNaturalLanguage:NO];
-		NSString *MDY1;
-		
-		y = [nInvoice projectID];
-		for (i=0;i<[storedSessions count]; i++){
-			
-			iSession = [storedSessions objectAtIndex:i];
-			x = [iSession projectIDref];
-			if ([x isEqual: y]){
-				
-				@try{
-				
-				//add session notes to list 
-				allSessionNotes = [allSessionNotes stringByAppendingString:@"\n"];
-				MDY1=[dateFormatter1 stringFromDate:[iSession sessionDate]];
-				allSessionNotes = [allSessionNotes stringByAppendingString:MDY1];
-				allSessionNotes = [allSessionNotes stringByAppendingString:@" - "];
-				allSessionNotes = [allSessionNotes stringByAppendingString:[iSession txtNotes]];
-				
-				}@catch (NSException *exception) {
-					NSLog(@"main: Caught %@: %@", [exception name], [exception reason]);
-					allSessionNotes = [allSessionNotes stringByAppendingString:[iSession sessionDate]];
-					allSessionNotes = [allSessionNotes stringByAppendingString:@" - "];
-					allSessionNotes = [allSessionNotes stringByAppendingString:[iSession txtNotes]];
-				}
-				
-			}
-			
-		}
-		
-		[nInvoice setInvoiceNotes:allSessionNotes];
-		
-		//////////////////////////
-		
-		[arrInvoices addObject:nInvoice];
-		
-		[invoicesView reloadData];
-		
-		//change tab
-		NSTabViewItem *selItem = [mainTabView tabViewItemAtIndex:4];
-		[mainTabView selectTabViewItem: selItem];		
-		
-	} else {
-		err = NSRunAlertPanel(NSLocalizedString(@"selProject", @"selProject"), NSLocalizedString(@"selProjInvoice", @"selProjInvoice"), @"sOK", nil, nil);
-		[selProject release];
-		[nInvoice release];
-	}
+    selProject = [arrProjects objectAtIndex:selRow];
+    [nInvoice setInvoiceNumber:[self createInvoiceNumber]];
+    [nInvoice setProjectName:[selProject projectName]];
+    [nInvoice setProjectID:[selProject projectID]];
+    [nInvoice setClientID:[selProject clientID]];
+    [nInvoice setStartDate:[selProject startDate]];
+    [nInvoice setEndDate:[selProject endDate]];
+    [nInvoice setClientName:[selProject clientName]];
+    [nInvoice setTotalTime:[selProject totalTime]];
+    [nInvoice setApprovalName:@"-"];
+    [nInvoice setInvoiceRate:0.00];
+
+    // invoice notes from session notes
+    NSString *allSessionNotes = [[NSString alloc] init];
+    Session *iSession;
+    int i;
+    NSString *x = [[NSString alloc] init];
+    NSString *y = [[NSString alloc] init];
+    NSDateFormatter *dateFormatter1 =
+        [[NSDateFormatter alloc] initWithDateFormat:@"%m/%d/%y"
+                               allowNaturalLanguage:NO];
+    NSString *MDY1;
+
+    y = [nInvoice projectID];
+    for (i = 0; i < [storedSessions count]; i++) {
+
+      iSession = [storedSessions objectAtIndex:i];
+      x = [iSession projectIDref];
+      if ([x isEqual:y]) {
+
+        @try {
+
+          // add session notes to list
+          allSessionNotes = [allSessionNotes stringByAppendingString:@"\n"];
+          MDY1 = [dateFormatter1 stringFromDate:[iSession sessionDate]];
+          allSessionNotes = [allSessionNotes stringByAppendingString:MDY1];
+          allSessionNotes = [allSessionNotes stringByAppendingString:@" - "];
+          allSessionNotes =
+              [allSessionNotes stringByAppendingString:[iSession txtNotes]];
+
+        } @catch (NSException *exception) {
+          NSLog(@"main: Caught %@: %@", [exception name], [exception reason]);
+          allSessionNotes =
+              [allSessionNotes stringByAppendingString:[iSession sessionDate]];
+          allSessionNotes = [allSessionNotes stringByAppendingString:@" - "];
+          allSessionNotes =
+              [allSessionNotes stringByAppendingString:[iSession txtNotes]];
+        }
+      }
+    }
+
+    [nInvoice setInvoiceNotes:allSessionNotes];
+    [arrInvoices addObject:nInvoice];
+
+    [invoicesView reloadData];
+
+    // change tab
+    NSTabViewItem *selItem = [mainTabView tabViewItemAtIndex:4];
+    [mainTabView selectTabViewItem:selItem];
+
+  } else {
+    err =
+        NSRunAlertPanel(NSLocalizedString(@"selProject", @"selProject"),
+                        NSLocalizedString(@"selProjInvoice", @"selProjInvoice"),
+                        @"sOK", nil, nil);
+    [selProject release];
+    [nInvoice release];
+  }
 }
 //create invoice number based on last invoice number
 - (NSString *)createInvoiceNumber
@@ -438,8 +424,6 @@
 		//add buttons to list view for notes
 		[self newSessionButtons:selSessions :0];
 	}
-
-
 }
 
 
@@ -471,9 +455,7 @@
 			newID = [self createRandomID];
 			i=0;
 		}
-
 	}
-	
 	return newID;
 }
 
@@ -658,8 +640,6 @@
 		
         NSMutableArray *arrProfiles = [[NSMutableArray alloc] initWithArray: [rootObject valueForKey:@"profile"]];
         
-		
-        
 		if ([arrProfiles count] == 0){
             
             int validateAction;
@@ -798,8 +778,6 @@
 	[NSApp endSheet:invoiceWindow returnCode:1];
     
 }
-	
-	
 
 // Add button cell objects to list(start clock, text notes, audio notes)
 - (void)newSessionButtons:(id)tSession :(int)type
@@ -883,7 +861,6 @@
 	}
 */
 	
-
 }
 
 - (IBAction)promptQTchange:(id)sender
@@ -922,7 +899,6 @@
 									 [stSess setProjectIDref:[tSession projectIDref]];
 									 break;
 								 }
-								 
 							 }
 							 
 							 NSLog(@"QT session end time %@",[tSession endTime]);
@@ -937,11 +913,8 @@
 				 err = NSRunAlertPanel(NSLocalizedString(@"saveSess", @"saveSess"), NSLocalizedString(@"saveSessMsg", @"saveSessMsg"), NSLocalizedString(@"sOK", @"sOK"), nil, nil);
 				 
 			 }
-				 
 			}
-	 
-	 }
-	
+         }
 }
 
 //Begin quick timer session
@@ -1791,17 +1764,6 @@ return nil;
 	
 	
 }
-
-
-
-- (IBAction)exportSelectedSessions:(id)sender
-{
-	
-	
-}
-
-
-
 
  - (void)dealloc
  {

@@ -79,12 +79,15 @@ static FileSystemItem *rootItem = nil;
         NSString *fullPath = [self fullPath];
         BOOL isDir, valid = [fileManager fileExistsAtPath:fullPath isDirectory:&isDir];
         if (valid && isDir) {
-            NSArray *array = [fileManager contentsOfDirectoryAtPath:fullPath error:nil];
-            //NSArray *array = [fileManager directoryContentsAtPath:fullPath];
-            int cnt, numChildren = [array count];
-            children = [[NSMutableArray alloc] initWithCapacity:numChildren];
-            for (cnt = 0; cnt < numChildren; cnt++) {
-                [children addObject:[[FileSystemItem alloc] initWithPath:[array objectAtIndex:cnt] parent:self]];
+          NSArray *array =
+              [fileManager contentsOfDirectoryAtPath:fullPath error:nil];
+          // NSArray *array = [fileManager directoryContentsAtPath:fullPath];
+          int cnt, numChildren = [array count];
+          children = [[NSMutableArray alloc] initWithCapacity:numChildren];
+          for (cnt = 0; cnt < numChildren; cnt++) {
+            [children addObject:[[FileSystemItem alloc]
+                                    initWithPath:[array objectAtIndex:cnt]
+                                          parent:self]];
             }
         } else {
             children = IsALeafNode;

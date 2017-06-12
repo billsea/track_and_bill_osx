@@ -48,7 +48,7 @@
 - (void)setDateFormat;
 - (IBAction)saveChanges:(id)sender;
 - (IBAction)cancelChanges:(id)sender;
-- (void) saveDataToDisk;
+- (void)saveDataToDisk;
 - (NSString *) pathForDataFile;
 - (void) loadDataFromDisk;
 -(void) loadSettings;

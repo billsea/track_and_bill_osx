@@ -8,18 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface Client : NSObject <NSCoding>{
-	NSString *company;
-	NSString *contactName;
-	NSString *email;
-	NSString *streetAddress;
-	NSString *city;
-	NSString *country;
-	NSString *state;
-	NSString *postalCode;
-	NSString *phoneNumber;
-	NSString *clientID;
+@interface Client : NSObject <NSCoding> {
+  NSString *company;
+  NSString *contactName;
+  NSString *email;
+  NSString *streetAddress;
+  NSString *city;
+  NSString *country;
+  NSString *state;
+  NSString *postalCode;
+  NSString *phoneNumber;
+  NSString *clientID;
 
 }
 - (void)setCompanyName:(NSString *)pCompany;

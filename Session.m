@@ -145,13 +145,18 @@
 
 - (int)getDateFormatSetting
 {
-	NSString *settingsPath = [[NSBundle bundleWithIdentifier: @"com.primomedia.TrackAndBill"] pathForResource:@"tbSettings" ofType:@"plist"];
-	NSMutableDictionary * settingsDict;
-	settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:settingsPath];
-	
-	NSLog(@"date format is = %d",[[settingsDict objectForKey:@"dateFormat"] intValue] );
-	
-	return [[settingsDict objectForKey:@"dateFormat"] intValue] ;
+  NSString *settingsPath =
+      [[NSBundle bundleWithIdentifier:@"com.primomedia.TrackAndBill"]
+          pathForResource:@"tbSettings"
+                   ofType:@"plist"];
+  NSMutableDictionary *settingsDict;
+  settingsDict =
+      [NSMutableDictionary dictionaryWithContentsOfFile:settingsPath];
+
+  NSLog(@"date format is = %d",
+        [[settingsDict objectForKey:@"dateFormat"] intValue]);
+
+  return [[settingsDict objectForKey:@"dateFormat"] intValue];
 	
 }
 

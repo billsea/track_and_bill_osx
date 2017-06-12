@@ -133,8 +133,8 @@
 
         [arrProfiles autorelease];
         arrProfiles = [[NSMutableArray alloc] initWithArray: newProfiles];
-			
-		if ([arrProfiles count] > 0 ){
+
+                if ([arrProfiles count] > 0 ){
 
             Profile * p = [arrProfiles objectAtIndex:0];
      

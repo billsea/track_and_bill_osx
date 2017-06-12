@@ -23,7 +23,7 @@
 		A94A44E80B701FA2003873B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94A44E60B701FA2003873B2 /* Localizable.strings */; };
 		A97610E10BC451AF0096AFBB /* tbSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97610E00BC451AF0096AFBB /* tbSettings.plist */; };
 		A9E5460F092310D7004B4B1E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E5460E092310D7004B4B1E /* Session.m */; };
-		A9E5D0EE09528CCC00A87E16 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A9E5D0ED09528CCC00A87E16 /* ToDo */; };
+		A9E5D0EE09528CCC00A87E16 /* _ToDo in Resources */ = {isa = PBXBuildFile; fileRef = A9E5D0ED09528CCC00A87E16 /* _ToDo */; };
 		A9F5844A091BE2AA0039F7DF /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F58449091BE2AA0039F7DF /* Project.m */; };
 		A9F58698091C26B40039F7DF /* FileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F58697091C26B40039F7DF /* FileSystemItem.m */; };
 		A9F6A4660B71712C00D5A020 /* rgLicTBBTS.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F6A4650B71712C00D5A020 /* rgLicTBBTS.plist */; };
@@ -73,7 +73,7 @@
 		A9AA58B60B7029C9005DE293 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		A9E5460D092310D7004B4B1E /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		A9E5460E092310D7004B4B1E /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
-		A9E5D0ED09528CCC00A87E16 /* ToDo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
+		A9E5D0ED09528CCC00A87E16 /* _ToDo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _ToDo; sourceTree = "<group>"; };
 		A9F58448091BE2AA0039F7DF /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
 		A9F58449091BE2AA0039F7DF /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		A9F58696091C26B40039F7DF /* FileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FileSystemItem.h; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				A910EDE30947C98D000C2B1F /* PreferenceController.m */,
 				A92848B2094FBDD600A98E67 /* Profile.h */,
 				A92848B3094FBDD600A98E67 /* Profile.m */,
-				A9E5D0ED09528CCC00A87E16 /* ToDo */,
+				A9E5D0ED09528CCC00A87E16 /* _ToDo */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				A905B05A09258730004C08DC /* OutlineView code in Resources */,
 				A910EE490947D0F4000C2B1F /* Preferences.nib in Resources */,
-				A9E5D0EE09528CCC00A87E16 /* ToDo in Resources */,
+				A9E5D0EE09528CCC00A87E16 /* _ToDo in Resources */,
 				A9151F450953A0B800F19A97 /* AppIcon.icns in Resources */,
 				A9151F470953A0E900F19A97 /* icon_62E128E2.icns in Resources */,
 				A9151F9B0953AD4800F19A97 /* calendar.icns in Resources */,

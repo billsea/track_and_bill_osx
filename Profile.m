@@ -27,7 +27,7 @@
 
 -(NSString *)getProfileName
 {
-    return profileName;
+  return profileName;
 }
 
 -(NSString *)profileName

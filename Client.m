@@ -133,18 +133,17 @@
 }
 
 // Saving and loading data
-- (void) encodeWithCoder: (NSCoder *)coder
-{
-	[coder encodeObject: company forKey:@"company"];
-	[coder encodeObject: contactName forKey:@"contactName"];
-	[coder encodeObject: email forKey:@"email"];
-	[coder encodeObject: streetAddress forKey:@"streetAddress"];
-	[coder encodeObject: city forKey:@"city"];
-	[coder encodeObject: country forKey:@"country"];
-	[coder encodeObject: state forKey:@"state"];
-	[coder encodeObject: postalCode forKey:@"postalCode"];
-	[coder encodeObject: phoneNumber forKey:@"phoneNumber"];
-	[coder encodeObject: clientID forKey:@"clientID"];
+- (void)encodeWithCoder:(NSCoder *)coder {
+  [coder encodeObject:company forKey:@"company"];
+  [coder encodeObject:contactName forKey:@"contactName"];
+  [coder encodeObject:email forKey:@"email"];
+  [coder encodeObject:streetAddress forKey:@"streetAddress"];
+  [coder encodeObject:city forKey:@"city"];
+  [coder encodeObject:country forKey:@"country"];
+  [coder encodeObject:state forKey:@"state"];
+  [coder encodeObject:postalCode forKey:@"postalCode"];
+  [coder encodeObject:phoneNumber forKey:@"phoneNumber"];
+  [coder encodeObject:clientID forKey:@"clientID"];
 	
 }
 
