@@ -8,35 +8,34 @@
 
 #import <Cocoa/Cocoa.h>
 
+@interface Invoice : NSObject <NSCoding> {
+  NSString *invoiceNumber;
+  NSString *projectName;
+  NSString *clientName;
+  NSDate *startDate;
+  NSDate *endDate;
+  NSDate *invoiceDate;
+  NSString *totalTime;
+  NSString *projectID;
+  NSString *clientID;
+  NSString *checkNumber;
 
-@interface Invoice : NSObject <NSCoding>{
-	NSString *invoiceNumber;
-	NSString *projectName;
-	NSString *clientName;
-	NSDate *startDate;
-	NSDate *endDate;
-	NSDate *invoiceDate;
-	NSString *totalTime;
-	NSString *projectID;
-	NSString *clientID;
-	NSString *checkNumber;
-	
-	NSString *approvalName;
-	NSString *invoiceTerms;
-	
-	NSString *invoiceNotes;
-	
-	NSString *invoiceMaterials;
-	float materialsTotal;
-	NSString *SmaterialsTotal;//materials total as string value
-	float invoiceDeposit;
-	NSString *SinvoiceDeposit;
-	float totalDue;
-	NSString *StotalDue;
-	double invoiceRate;
-	NSString *SinvoiceRate;
-	double grandTotal;
-	NSString *SgrandTotal;
+  NSString *approvalName;
+  NSString *invoiceTerms;
+
+  NSString *invoiceNotes;
+
+  NSString *invoiceMaterials;
+  float materialsTotal;
+  NSString *SmaterialsTotal; // materials total as string value
+  float invoiceDeposit;
+  NSString *SinvoiceDeposit;
+  float totalDue;
+  NSString *StotalDue;
+  double invoiceRate;
+  NSString *SinvoiceRate;
+  double grandTotal;
+  NSString *SgrandTotal;
 }
 
 - (void)setProjectName:(NSString *)pName;

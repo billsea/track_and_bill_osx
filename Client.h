@@ -19,7 +19,6 @@
   NSString *postalCode;
   NSString *phoneNumber;
   NSString *clientID;
-
 }
 - (void)setCompanyName:(NSString *)pCompany;
 - (void)setContactName:(NSString *)pContact;
@@ -33,3 +32,5 @@
 - (void)setClientID:(NSString *)cID;
 
 @end
+
+d

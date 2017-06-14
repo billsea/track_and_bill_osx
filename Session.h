@@ -8,21 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 
+@interface Session : NSObject <NSCoding> {
 
-@interface Session : NSObject <NSCoding>{
-
-	NSString *projectName;
-	NSString *clientName;
-	NSDate *sessionDate;
-	NSDate *startTime;
-	NSDate *endTime;
-	NSButtonCell *startClock;
-	NSButtonCell *textNotes; //for text and audio notes
-	NSString *txtNotes;
-	NSString *projectIDref;
-	NSString *sessionID;
-
-	
+  NSString *projectName;
+  NSString *clientName;
+  NSDate *sessionDate;
+  NSDate *startTime;
+  NSDate *endTime;
+  NSButtonCell *startClock;
+  NSButtonCell *textNotes; // for text and audio notes
+  NSString *txtNotes;
+  NSString *projectIDref;
+  NSString *sessionID;
 }
 - (void)setProjectName:(NSString *)pName;
 - (void)setClientName:(NSString *)cName;

@@ -8,21 +8,19 @@
 
 #import <Cocoa/Cocoa.h>
 
+@interface Profile : NSObject <NSCoding> {
 
-@interface Profile : NSObject <NSCoding>{
-	
-	NSString *profileName;
-	NSString *profileAddress;
-        NSString *profileCity;
-        NSString *profileState;
-	NSString *profileZip;
-	NSString *profilePhone;
-	NSString *profileEmail;
-	NSString *profileContact;
-
+  NSString *profileName;
+  NSString *profileAddress;
+  NSString *profileCity;
+  NSString *profileState;
+  NSString *profileZip;
+  NSString *profilePhone;
+  NSString *profileEmail;
+  NSString *profileContact;
 }
 
--(NSString *)getProfileName;
+- (NSString *)getProfileName;
 
 - (void)setProfileName:(NSString *)pName;
 - (void)setProfileAddress:(NSString *)pAddress;
@@ -32,6 +30,6 @@
 - (void)setProfilePhone:(NSString *)pPhone;
 - (void)setProfileEmail:(NSString *)pEmail;
 - (void)setProfileContact:(NSString *)pContact;
-- (void) encodeWithCoder: (NSCoder *)coder;
-- (id) initWithCoder: (NSCoder *)coder;
+- (void)encodeWithCoder:(NSCoder *)coder;
+- (id)initWithCoder:(NSCoder *)coder;
 @end
